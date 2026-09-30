@@ -1,13 +1,71 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFile} from 'node:fs/promises';
-import {taxBreakdown,searchRecords,escapeHtml,csv} from '../public/lib.mjs';
-const {tax}=JSON.parse(await readFile(new URL('../public/data/finance.json',import.meta.url),'utf8'));
-test('outside-precinct tax matches the published rate',()=>{const d=taxBreakdown(600000,'town',tax);assert.equal(d.total,7566);assert.equal(d.rows.find(r=>r.id==='town').amount,2826);assert.equal(d.rows.reduce((s,r)=>s+r.amount,0),d.total);});
-test('full and partial precinct charges are distinct',()=>{assert.equal(taxBreakdown(600000,'precinct',tax).total,7938);assert.equal(taxBreakdown(600000,'partial',tax).total,7602);assert.equal(taxBreakdown(600000,'precinct',tax).rows.at(-1).amount,372);});
-test('zero and fractional assessed values remain valid',()=>{assert.equal(taxBreakdown(0,'town',tax).total,0);assert.equal(taxBreakdown(123456.78,'town',tax).total,123456.78*12.61/1000);});
-test('invalid values and categories are rejected',()=>{for(const v of [-1,NaN,Infinity,100000001])assert.throws(()=>taxBreakdown(v,'town',tax),RangeError);assert.throws(()=>taxBreakdown(100000,'unknown',tax));});
-test('tax rows reconcile for each supported category and multiple valuations',()=>{for(const value of [0,123456.78,600000,2000000,99999999])for(const area of tax.districts){const d=taxBreakdown(value,area.id,tax);assert(Math.abs(d.total-d.rows.reduce((s,r)=>s+r.amount,0))<0.000001);}});
-test('search includes extracted text and honors category',()=>{const records=[{title:'2024 finance',entity:'Town',description:'Annual report',category:'Finance',text:'purchase orders 532,815'},{title:'School meeting',entity:'School',description:'Minutes',category:'Schools',text:'budget'}];assert.equal(searchRecords(records,'PURCHASE orders').length,1);assert.equal(searchRecords(records,'budget','Finance').length,0);assert.equal(searchRecords(records,'','Schools').length,1);});
-test('record text is escaped before HTML rendering',()=>assert.equal(escapeHtml('<img src=x onerror="alert(1)">'), '&lt;img src=x onerror=&quot;alert(1)&quot;&gt;'));
-test('CSV preserves commas, quotes, and line breaks',()=>assert.equal(csv([['A,B','"q"'],['line\nnext',2]]),'"A,B","""q"""\r\n"line\nnext","2"'));
+import { readFile } from 'node:fs/promises';
+import { taxBreakdown, searchRecords, escapeHtml, csv } from '../public/lib.mjs';
+const { tax } = JSON.parse(
+  await readFile(new URL('../public/data/finance.json', import.meta.url), 'utf8'),
+);
+test('outside-precinct tax matches the published rate', () => {
+  const d = taxBreakdown(600000, 'town', tax);
+  assert.equal(d.total, 7566);
+  assert.equal(d.rows.find((r) => r.id === 'town').amount, 2826);
+  assert.equal(
+    d.rows.reduce((s, r) => s + r.amount, 0),
+    d.total,
+  );
+});
+test('full and partial precinct charges are distinct', () => {
+  assert.equal(taxBreakdown(600000, 'precinct', tax).total, 7938);
+  assert.equal(taxBreakdown(600000, 'partial', tax).total, 7602);
+  assert.equal(taxBreakdown(600000, 'precinct', tax).rows.at(-1).amount, 372);
+});
+test('zero and fractional assessed values remain valid', () => {
+  assert.equal(taxBreakdown(0, 'town', tax).total, 0);
+  assert.equal(taxBreakdown(123456.78, 'town', tax).total, (123456.78 * 12.61) / 1000);
+});
+test('invalid values and categories are rejected', () => {
+  for (const v of [-1, NaN, Infinity, 100000001])
+    assert.throws(() => taxBreakdown(v, 'town', tax), RangeError);
+  assert.throws(() => taxBreakdown(100000, 'unknown', tax));
+});
+test('tax rows reconcile for each supported category and multiple valuations', () => {
+  for (const value of [0, 123456.78, 600000, 2000000, 99999999])
+    for (const area of tax.districts) {
+      const d = taxBreakdown(value, area.id, tax);
+      assert(Math.abs(d.total - d.rows.reduce((s, r) => s + r.amount, 0)) < 0.000001);
+    }
+});
+test('search includes extracted text and honors category', () => {
+  const records = [
+    {
+      title: '2024 finance',
+      entity: 'Town',
+      description: 'Annual report',
+      category: 'Finance',
+      text: 'purchase orders 532,815',
+    },
+    {
+      title: 'School meeting',
+      entity: 'School',
+      description: 'Minutes',
+      category: 'Schools',
+      text: 'budget',
+    },
+  ];
+  assert.equal(searchRecords(records, 'PURCHASE orders').length, 1);
+  assert.equal(searchRecords(records, 'budget', 'Finance').length, 0);
+  assert.equal(searchRecords(records, '', 'Schools').length, 1);
+});
+test('record text is escaped before HTML rendering', () =>
+  assert.equal(
+    escapeHtml('<img src=x onerror="alert(1)">'),
+    '&lt;img src=x onerror=&quot;alert(1)&quot;&gt;',
+  ));
+test('CSV preserves commas, quotes, and line breaks', () =>
+  assert.equal(
+    csv([
+      ['A,B', '"q"'],
+      ['line\nnext', 2],
+    ]),
+    '"A,B","""q"""\r\n"line\nnext","2"',
+  ));

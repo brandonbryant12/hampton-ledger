@@ -1,84 +1,611 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#102f3a">
-<title>Hampton Ledger — Follow your public dollars</title>
-<meta name="description" content="An independent, open-source guide to Hampton, New Hampshire's public finances. Explore your tax bill, town spending, and the records behind the numbers.">
-<meta property="og:title" content="Hampton Ledger — Your town. Your money.">
-<meta property="og:description" content="Follow public dollars in Hampton, New Hampshire. Independent, open source, and grounded in original records.">
-<meta property="og:type" content="website"><meta property="og:url" content="https://hampton.brandonbryant.io">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/styles.css">
-<script type="module" src="/app.mjs"></script>
-</head>
-<body>
-<a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header">
-<a href="#overview" class="brand" aria-label="Hampton Ledger home"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M6 8h6v13H6zm9-4h6v17h-6zm9 8h6v9h-6z" fill="currentColor"/><path d="M4 27c5-6 9 6 14 0s9 6 14 0" fill="none" stroke="currentColor" stroke-width="2.5"/></svg><span>Hampton<span class="brand-light"> Ledger</span></span></a>
-<nav aria-label="Main navigation">
-<a href="#overview" data-nav="overview">Overview</a><a href="#taxes" data-nav="taxes">Your taxes</a><a href="#spending" data-nav="spending">Spending</a><a href="#records" data-nav="records">The records</a><a href="#about" data-nav="about">Our method</a>
-</nav>
-<a class="github-link" href="https://github.com/brandonbryant12/hampton-ledger" target="_blank" rel="noopener noreferrer" aria-label="Hampton Ledger on GitHub (opens a new tab)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .8A11.2 11.2 0 0 0 8.46 22.63c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.8-1.33-3.8-1.33-.5-1.3-1.24-1.64-1.24-1.64-1.02-.7.08-.68.08-.68 1.13.08 1.73 1.16 1.73 1.16 1 1.73 2.63 1.23 3.27.94.1-.73.4-1.23.71-1.51-2.5-.29-5.13-1.25-5.13-5.58 0-1.23.44-2.24 1.16-3.03-.12-.29-.5-1.43.11-2.98 0 0 .94-.3 3.08 1.15a10.8 10.8 0 0 1 5.6 0c2.14-1.45 3.08-1.15 3.08-1.15.61 1.55.23 2.7.11 2.98.72.79 1.16 1.8 1.16 3.03 0 4.34-2.63 5.28-5.14 5.56.4.35.76 1.03.76 2.08v3.1c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8Z"/></svg><span>Open source</span></a>
-</header>
-<main id="main" tabindex="-1">
-<div id="app-status" class="load-status" role="status">Opening the ledger…</div>
-<section id="overview" class="page" aria-labelledby="overview-title" hidden>
-<div class="hero">
-<div class="hero-copy"><p class="location"><span class="location-dot"></span> Hampton, New Hampshire</p><h1 id="overview-title">Your town.<br> Your money.<br> An open book.</h1><p class="hero-intro">Understand where your taxes go.<br> Explore the records. Follow the decisions.<br> Help build a more accountable Hampton.</p><div class="hero-actions"><a href="#taxes" class="button primary">Explore your tax dollars <span aria-hidden="true">↗</span></a><a href="#records" class="text-link">Browse the evidence</a></div><p class="independent">Resident-led. Independent of town government.</p></div>
-<div class="coast-scene" aria-label="Illustration of a lighthouse on the Hampton coast" role="img">
-<svg viewBox="0 0 620 650" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-<defs><clipPath id="coast-clip"><rect x="0" y="0" width="620" height="650" rx="180"/></clipPath><pattern id="grain" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="2" cy="3" r=".6" fill="#fff" opacity=".14"/><circle cx="7" cy="7" r=".5" fill="#fff" opacity=".12"/></pattern></defs>
-<g clip-path="url(#coast-clip)">
-<rect width="620" height="650" fill="#dce9df"/><circle cx="448" cy="154" r="57" fill="#e9cd8c"/>
-<path d="M0 260Q150 225 300 282T620 260V650H0Z" fill="#98beb2"/>
-<path d="M0 325Q155 264 320 323T620 321V650H0Z" fill="#6d9f97"/>
-<path d="M0 385Q150 315 309 374T620 374V650H0Z" fill="#3d7a7d"/>
-<path d="M0 449Q146 378 310 434T620 433V650H0Z" fill="#21556a"/>
-<path d="M0 517Q146 444 310 493T620 492V650H0Z" fill="#183d50"/>
-<path d="M0 584Q146 510 310 557T620 553V650H0Z" fill="#102f3a"/>
-<g fill="none" stroke="#f7f7f0" stroke-width="1" opacity=".38"><path d="M-40 357Q150 274 320 342T670 320"/><path d="M-40 412Q150 338 320 398T670 376"/><path d="M-40 476Q150 402 320 462T670 440"/><path d="M-40 548Q150 467 320 525T670 505"/><path d="M-40 611Q150 532 320 585T670 567"/></g>
-<path d="M44 334 94 300 121 309 156 282 197 312 218 358 277 390 188 405 97 378Z" fill="#d6d6bd"/><path d="m92 343 61-21 61 40-53 10Z" fill="#b6bca6"/>
-<path d="m123 303 9-109h27l12 118Z" fill="#faf8e9"/><path d="m153 195 6-1 12 118-18-5Z" fill="#dddcca"/><path d="M124 194h43v-10h-43Z" fill="#173e48"/><path d="M133 182v-22h25v22" fill="#e7d297" stroke="#173e48" stroke-width="5"/><path d="m128 157 18-18 18 18Z" fill="#173e48"/><path d="M142 140v-9m4 35v13" stroke="#173e48" stroke-width="3"/><path d="M139 284v19h14v-19a7 7 0 0 0-14 0m2-49h9v12h-9Z" fill="#21556a"/><path d="M129 257h36" stroke="#d5d6c7" stroke-width="4"/>
-<g fill="none" stroke="#315e64" stroke-width="2" stroke-linecap="round"><path d="M298 171q10-12 20 0 10-12 20 0m-38-29q7-8 14 0 7-8 14 0m181 106q9-10 18 0 9-10 18 0"/></g>
-<rect width="620" height="650" fill="url(#grain)"/>
-</g></svg><div class="coast-caption"><span>Clarity starts at home.</span><span class="caption-rule"></span><span>Est. 2026</span></div></div>
-</div>
-<div class="edition-strip"><span><span class="status-dot"></span> Public evidence, openly available</span><span>Initial collection · <span data-collection-date>September 2026</span></span><a href="#about">See what’s covered <span aria-hidden="true">↗</span></a></div>
-<section class="overview-tax section-space"><div><p class="section-kicker">Start with your tax bill</p><h2>One bill.<br> Several public budgets.</h2><p>Town operations are one part of your property taxes. Schools, county government, and the village district also have a role.</p><a class="button outline" href="#taxes">Find your breakdown <span aria-hidden="true">↗</span></a></div><div class="allocation-preview"><div class="allocation-top"><h3>Where each tax dollar goes</h3><span>2025 · outside precinct</span></div><div id="preview-bar" class="stacked-bar" role="img" aria-label="Tax allocation"></div><div id="preview-legend" class="preview-legend"></div><p class="source-note">Calculated from <a href="https://hamptonnh.gov/153/Assessing" target="_blank" rel="noopener">Hampton’s published 2025 rates ↗</a></p></div></section>
-<section class="evidence-section section-space"><div class="section-heading"><div><p class="section-kicker">A trail you can follow</p><h2>Every number needs a source.</h2></div><a href="#records" class="text-link">Explore the collection <span aria-hidden="true">↗</span></a></div><div class="evidence-grid" id="featured-records"></div></section>
-<section class="invitation"><div class="invitation-symbol" aria-hidden="true">≋</div><div><h2>A clearer picture, built together.</h2><p>This is the beginning of an open public ledger. See what we’ve collected, what’s missing, and how you can help.</p></div><a href="#about" class="button light">See the roadmap <span aria-hidden="true">↗</span></a></section>
-</section>
-<section id="taxes" class="page" aria-labelledby="tax-title" hidden>
-<div class="page-intro"><p class="section-kicker">Your taxes, explained</p><h1 id="tax-title">Follow your dollar.</h1><p>Turn an assessed property value into a clear picture of the public budgets it supports.</p></div>
-<div class="tax-layout"><form id="tax-form" class="tax-controls"><div class="year-label"><span class="status-dot"></span> Published 2025 tax rates</div><label for="property-value">Your assessed property value</label><div class="currency-input"><span aria-hidden="true">$</span><input id="property-value" type="number" min="0" max="100000000" step="1000" value="600000" inputmode="decimal" aria-describedby="value-help tax-error"></div><p id="value-help" class="help">Use the assessed value on your tax bill, which may differ from market value.</p><label for="value-range" class="sr-only">Adjust assessed value</label><input id="value-range" type="range" min="100000" max="2000000" step="10000" value="600000"><div class="range-labels" aria-hidden="true"><span>$100k</span><span>$2m</span></div><label for="tax-district">Tax category</label><select id="tax-district"></select><p class="help">Find the category code on your bill. Precinct eligibility is not determined by this tool.</p><p id="tax-error" role="alert"></p><div class="tax-total"><span>Illustrative annual tax</span><strong id="annual-tax">$7,566</strong><span id="tax-rate-label">$12.61 per $1,000 of assessed value</span></div><button class="button outline" type="button" id="download-tax">Download this breakdown <span aria-hidden="true">↓</span></button></form>
-<div class="tax-visual"><div class="donut-wrap"><svg viewBox="0 0 320 320" id="tax-donut" role="img" aria-label="Tax allocation by public budget"></svg><div class="donut-center"><span>Every dollar</span><strong id="donut-rate">100<span>¢</span></strong><span>accounted for in the rate</span></div></div><div id="tax-breakdown" class="tax-breakdown"></div></div></div>
-<div class="note-panel"><strong>An illustration, not a tax bill.</strong><p id="tax-limitations"></p><p>Source: <a href="https://hamptonnh.gov/153/Assessing" target="_blank" rel="noopener">Town of Hampton, 2025 tax-rate table ↗</a> · <button class="inline-button" data-record="hampton-assessing">Inspect archived evidence</button></p></div>
-<div class="two-column section-space"><div><h2>Why can my bill change?</h2><p>Your bill reflects both the tax rate and your assessed value. Changes in budgets, other revenues, and the town’s taxable value can all affect the rate. A lower rate alone does not mean a lower bill.</p></div><div><h2>What would savings mean?</h2><p>Actual tax relief depends on which public body saves money, whether the saving recurs, and how it changes the amount raised through property taxes. We will track proposed, adopted, and realized savings separately.</p></div></div>
-</section>
-<section id="spending" class="page" aria-labelledby="spending-title" hidden>
-<div class="page-intro"><p class="section-kicker">Town spending</p><h1 id="spending-title">The numbers.<br> With the context.</h1><p>Explore town operating finances in the 2024 and 2025 annual reports.</p></div>
-<div class="report-banner"><label for="spending-year">Reporting year <select id="spending-year"><option value="2025">2025</option><option value="2024">2024</option></select></label><strong>Unaudited annual-report summary</strong><button class="inline-button" id="spending-source" data-record="hampton-annual-2025">Read the source ↗</button></div>
-<div class="finance-feature"><div><span class="section-kicker">Reported operating expenses, including encumbrances</span><div class="finance-amount" id="operating-total"></div><p>Includes <strong id="encumbrance-total"></strong> in purchase orders. Excludes expenditures related to warrant articles.</p></div><div class="budget-meter"><div class="meter-title"><strong id="budget-percent">94.09%</strong><span>of the reported operating budget used</span></div><div class="meter-track"><div id="budget-fill" style="width:94.09%"></div></div><p><span id="budget-remainder">5.91%</span> reported under budget. Unspent authorization is not automatically a recurring saving.</p></div></div>
-<div class="finance-rows" id="finance-rows"></div>
-<div class="note-panel"><strong>What this number does—and doesn’t—tell us</strong><p id="spending-limitations"></p><p>This release does not yet contain a complete general ledger, vendor payment register, or invoice collection. We cannot calculate transaction coverage or identify verified savings from these summary figures alone.</p></div>
-<section class="section-space"><div class="section-heading"><div><p class="section-kicker">Building the evidence trail</p><h2>From permission to payment.</h2></div></div><div class="trace-flow"><div><span class="trace-number">1</span><h3>Authorize</h3><p>Budget, warrant article, and public vote.</p><span class="tag">Source directories indexed</span></div><div><span class="trace-number">2</span><h3>Commit</h3><p>Bid, contract, and purchase order.</p><span class="tag">Procurement index collected</span></div><div><span class="trace-number">3</span><h3>Pay</h3><p>Invoice, payment, and account entry.</p><span class="tag pending">Records needed</span></div><div><span class="trace-number">4</span><h3>Deliver</h3><p>Completed work and service results.</p><span class="tag pending">Records needed</span></div></div><p class="source-note">These are collection stages, not claims about a specific project.</p></section>
-</section>
-<section id="records" class="page" aria-labelledby="records-title" hidden>
-<div class="page-intro"><p class="section-kicker">The evidence library</p><h1 id="records-title">Go straight to the source.</h1><p>Search collected public records and source directories. Open an original, inspect the text, or download a preserved copy.</p></div>
-<div class="search-toolbar"><label class="search-box" for="record-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="7"/><path d="m16 16 5 5"/></svg><input id="record-search" type="search" placeholder="Search budgets, meetings, contracts…" autocomplete="off"><kbd aria-hidden="true">/</kbd></label><label class="sr-only" for="record-category">Filter records</label><select id="record-category"><option value="all">All records</option><option value="Finance">Finance & taxes</option><option value="Meetings">Meetings & decisions</option><option value="Procurement">Procurement</option><option value="Schools">Schools</option></select></div>
-<div class="results-meta"><span id="record-count" role="status" aria-live="polite"></span><button class="inline-button" id="download-index">Download collection index ↓</button></div>
-<div id="record-results"></div><div id="records-empty" class="empty-state" hidden><h2>No matching records yet.</h2><p>Try a broader term or another category. An empty result means it is not in this collection; it does not establish that the record does not exist.</p><button class="button outline" id="clear-search">Clear search</button></div>
-<div class="note-panel"><strong>A growing collection, with visible limits.</strong><p>Source directories help you locate official records; they are not a complete archive of their linked documents. Meeting transcripts and a full historical archive are not yet included. Collection dates describe retrieval, not when every fact was last updated.</p></div>
-</section>
-<section id="about" class="page" aria-labelledby="about-title" hidden>
-<div class="page-intro"><p class="section-kicker">Our method</p><h1 id="about-title">Trust the trail.<br> Check our work.</h1><p>Hampton Ledger is a resident-led, open-source project. Our purpose is to make public finances understandable and help residents identify well-supported improvements.</p></div>
-<div class="method-layout"><div><h2>Evidence before conclusions.</h2><p>Every financial claim on this site points back to a public source. We preserve retrieved records, record their content hashes, and explain our calculations. You can inspect the same material we used.</p><p>A missing record means our evidence is incomplete. It does not, by itself, establish waste, wrongdoing, or a legal violation.</p><p>Hampton Ledger is independent of the Town of Hampton and other public bodies. It is not an official tax service or a professional financial audit.</p><a href="https://github.com/brandonbryant12/hampton-ledger/blob/main/docs/methodology.md" class="text-link" target="_blank" rel="noopener">Read the full methodology ↗</a></div><div class="coverage-card"><h2>Where we stand</h2><dl><div><dt>2025 tax-rate model</dt><dd class="coverage-ready">Published</dd></div><div><dt>2024–2025 finance summaries</dt><dd class="coverage-ready">Published</dd></div><div><dt>Public source collection</dt><dd class="coverage-ready" id="coverage-count">In progress</dd></div><div><dt>Transaction-level ledger</dt><dd>Not collected</dd></div><div><dt>Complete meeting archive</dt><dd>Not collected</dd></div><div><dt>AI-reviewed findings</dt><dd>Not published</dd></div><div><dt>Verified savings</dt><dd>Not established</dd></div></dl></div></div>
-<section class="section-space"><div class="section-heading"><div><p class="section-kicker">The next evidence to collect</p><h2>An open research agenda.</h2></div><a href="https://github.com/brandonbryant12/hampton-ledger/issues" class="text-link" target="_blank" rel="noopener">Follow the work on GitHub ↗</a></div><div id="request-list" class="request-list"></div><p class="source-note">These are planned records requests. No request has been submitted by this website.</p><button class="button outline" id="download-request">Download a draft records request ↓</button></section>
-<div class="two-column section-space"><div><h2>Useful AI needs reliable evidence.</h2><p>Future tools can connect records, find discrepancies, and summarize meetings with page and timestamp citations. Calculations will remain reproducible, and potential findings will require human review before publication.</p><p>There is no AI analysis running on this release.</p></div><div><h2>Built to be shared.</h2><p>The code, data model, collection scripts, and methodology are public. Other communities can adapt the project while keeping their own rules, accounts, and sources explicit.</p><p>Found an error or a missing source? Open an issue with a link to the evidence. Please do not submit private personal information.</p><a class="button primary" href="https://github.com/brandonbryant12/hampton-ledger/issues/new?template=correction.yml" target="_blank" rel="noopener">Suggest a correction <span aria-hidden="true">↗</span></a></div></div>
-</section>
-</main>
-<footer><div class="footer-brand">Hampton Ledger<span>Public money. Public understanding.</span></div><p>Independent civic research for Hampton, New Hampshire.</p><div><a href="#about">Methodology</a><a href="https://github.com/brandonbryant12/hampton-ledger" target="_blank" rel="noopener">GitHub ↗</a><a href="/data/records.json" download>Open data ↓</a></div></footer>
-<dialog id="record-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span id="dialog-category"></span><button id="close-dialog" class="close-button" aria-label="Close record">×</button></div><h2 id="dialog-title"></h2><p id="dialog-description"></p><div id="dialog-meta" class="dialog-meta"></div><div id="dialog-links" class="dialog-links"></div><details><summary>Preservation details</summary><div id="dialog-provenance"></div></details><h3>Searchable source text</h3><p class="source-note">Automated extraction may contain formatting errors. Consult the original for authoritative context.</p><pre id="dialog-text" tabindex="0"></pre></dialog>
-<noscript><div class="note-panel">Enable JavaScript to use the interactive explorer. You can still <a href="/data/finance.json">download the financial data</a>, <a href="/data/records.json">read the record index</a>, or visit <a href="https://hamptonnh.gov/153/Assessing">Hampton’s official tax information</a>.</div></noscript>
-</body></html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#102f3a" />
+    <title>Hampton Ledger — Follow your public dollars</title>
+    <meta
+      name="description"
+      content="An independent, open-source guide to Hampton, New Hampshire's public finances. Explore your tax bill, town spending, and the records behind the numbers."
+    />
+    <meta property="og:title" content="Hampton Ledger — Your town. Your money." />
+    <meta
+      property="og:description"
+      content="Follow public dollars in Hampton, New Hampshire. Independent, open source, and grounded in original records."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hampton.brandonbryant.io" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/app.mjs"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a href="#overview" class="brand" aria-label="Hampton Ledger home"
+        ><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M6 8h6v13H6zm9-4h6v17h-6zm9 8h6v9h-6z" fill="currentColor" />
+          <path
+            d="M4 27c5-6 9 6 14 0s9 6 14 0"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+          /></svg
+        ><span>Hampton<span class="brand-light"> Ledger</span></span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#overview" data-nav="overview">Overview</a
+        ><a href="#taxes" data-nav="taxes">Your taxes</a
+        ><a href="#spending" data-nav="spending">Spending</a
+        ><a href="#records" data-nav="records">The records</a
+        ><a href="#about" data-nav="about">Our method</a>
+      </nav>
+      <a
+        class="github-link"
+        href="https://github.com/brandonbryant12/hampton-ledger"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Hampton Ledger on GitHub (opens a new tab)"
+        ><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path
+            d="M12 .8A11.2 11.2 0 0 0 8.46 22.63c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.8-1.33-3.8-1.33-.5-1.3-1.24-1.64-1.24-1.64-1.02-.7.08-.68.08-.68 1.13.08 1.73 1.16 1.73 1.16 1 1.73 2.63 1.23 3.27.94.1-.73.4-1.23.71-1.51-2.5-.29-5.13-1.25-5.13-5.58 0-1.23.44-2.24 1.16-3.03-.12-.29-.5-1.43.11-2.98 0 0 .94-.3 3.08 1.15a10.8 10.8 0 0 1 5.6 0c2.14-1.45 3.08-1.15 3.08-1.15.61 1.55.23 2.7.11 2.98.72.79 1.16 1.8 1.16 3.03 0 4.34-2.63 5.28-5.14 5.56.4.35.76 1.03.76 2.08v3.1c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8Z"
+          /></svg
+        ><span>Open source</span></a
+      >
+    </header>
+    <main id="main" tabindex="-1">
+      <div id="app-status" class="load-status" role="status">Opening the ledger…</div>
+      <section id="overview" class="page" aria-labelledby="overview-title" hidden>
+        <div class="hero">
+          <div class="hero-copy">
+            <p class="location"><span class="location-dot"></span> Hampton, New Hampshire</p>
+            <h1 id="overview-title">
+              Your town.<br />
+              Your money.<br />
+              An open book.
+            </h1>
+            <p class="hero-intro">
+              Understand where your taxes go.<br />
+              Explore the records. Follow the decisions.<br />
+              Help build a more accountable Hampton.
+            </p>
+            <div class="hero-actions">
+              <a href="#taxes" class="button primary"
+                >Explore your tax dollars <span aria-hidden="true">↗</span></a
+              ><a href="#records" class="text-link">Browse the evidence</a>
+            </div>
+            <p class="independent">Resident-led. Independent of town government.</p>
+          </div>
+          <div
+            class="coast-scene"
+            aria-label="Illustration of a lighthouse on the Hampton coast"
+            role="img"
+          >
+            <svg viewBox="0 0 620 650" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs>
+                <clipPath id="coast-clip">
+                  <rect x="0" y="0" width="620" height="650" rx="180" />
+                </clipPath>
+                <pattern id="grain" width="9" height="9" patternUnits="userSpaceOnUse">
+                  <circle cx="2" cy="3" r=".6" fill="#fff" opacity=".14" />
+                  <circle cx="7" cy="7" r=".5" fill="#fff" opacity=".12" />
+                </pattern>
+              </defs>
+              <g clip-path="url(#coast-clip)">
+                <rect width="620" height="650" fill="#dce9df" />
+                <circle cx="448" cy="154" r="57" fill="#e9cd8c" />
+                <path d="M0 260Q150 225 300 282T620 260V650H0Z" fill="#98beb2" />
+                <path d="M0 325Q155 264 320 323T620 321V650H0Z" fill="#6d9f97" />
+                <path d="M0 385Q150 315 309 374T620 374V650H0Z" fill="#3d7a7d" />
+                <path d="M0 449Q146 378 310 434T620 433V650H0Z" fill="#21556a" />
+                <path d="M0 517Q146 444 310 493T620 492V650H0Z" fill="#183d50" />
+                <path d="M0 584Q146 510 310 557T620 553V650H0Z" fill="#102f3a" />
+                <g fill="none" stroke="#f7f7f0" stroke-width="1" opacity=".38">
+                  <path d="M-40 357Q150 274 320 342T670 320" />
+                  <path d="M-40 412Q150 338 320 398T670 376" />
+                  <path d="M-40 476Q150 402 320 462T670 440" />
+                  <path d="M-40 548Q150 467 320 525T670 505" />
+                  <path d="M-40 611Q150 532 320 585T670 567" />
+                </g>
+                <path
+                  d="M44 334 94 300 121 309 156 282 197 312 218 358 277 390 188 405 97 378Z"
+                  fill="#d6d6bd"
+                />
+                <path d="m92 343 61-21 61 40-53 10Z" fill="#b6bca6" />
+                <path d="m123 303 9-109h27l12 118Z" fill="#faf8e9" />
+                <path d="m153 195 6-1 12 118-18-5Z" fill="#dddcca" />
+                <path d="M124 194h43v-10h-43Z" fill="#173e48" />
+                <path d="M133 182v-22h25v22" fill="#e7d297" stroke="#173e48" stroke-width="5" />
+                <path d="m128 157 18-18 18 18Z" fill="#173e48" />
+                <path d="M142 140v-9m4 35v13" stroke="#173e48" stroke-width="3" />
+                <path d="M139 284v19h14v-19a7 7 0 0 0-14 0m2-49h9v12h-9Z" fill="#21556a" />
+                <path d="M129 257h36" stroke="#d5d6c7" stroke-width="4" />
+                <g fill="none" stroke="#315e64" stroke-width="2" stroke-linecap="round">
+                  <path
+                    d="M298 171q10-12 20 0 10-12 20 0m-38-29q7-8 14 0 7-8 14 0m181 106q9-10 18 0 9-10 18 0"
+                  />
+                </g>
+                <rect width="620" height="650" fill="url(#grain)" />
+              </g>
+            </svg>
+            <div class="coast-caption">
+              <span>Clarity starts at home.</span><span class="caption-rule"></span
+              ><span>Est. 2026</span>
+            </div>
+          </div>
+        </div>
+        <div class="edition-strip">
+          <span><span class="status-dot"></span> Public evidence, openly available</span
+          ><span>Initial collection · <span data-collection-date>September 2026</span></span
+          ><a href="#about">See what’s covered <span aria-hidden="true">↗</span></a>
+        </div>
+        <section class="overview-tax section-space">
+          <div>
+            <p class="section-kicker">Start with your tax bill</p>
+            <h2>
+              One bill.<br />
+              Several public budgets.
+            </h2>
+            <p>
+              Town operations are one part of your property taxes. Schools, county government, and
+              the village district also have a role.
+            </p>
+            <a class="button outline" href="#taxes"
+              >Find your breakdown <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="allocation-preview">
+            <div class="allocation-top">
+              <h3>Where each tax dollar goes</h3>
+              <span>2025 · outside precinct</span>
+            </div>
+            <div id="preview-bar" class="stacked-bar" role="img" aria-label="Tax allocation"></div>
+            <div id="preview-legend" class="preview-legend"></div>
+            <p class="source-note">
+              Calculated from
+              <a href="https://hamptonnh.gov/153/Assessing" target="_blank" rel="noopener"
+                >Hampton’s published 2025 rates ↗</a
+              >
+            </p>
+          </div>
+        </section>
+        <section class="evidence-section section-space">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">A trail you can follow</p>
+              <h2>Every number needs a source.</h2>
+            </div>
+            <a href="#records" class="text-link"
+              >Explore the collection <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="evidence-grid" id="featured-records"></div>
+        </section>
+        <section class="invitation">
+          <div class="invitation-symbol" aria-hidden="true">≋</div>
+          <div>
+            <h2>A clearer picture, built together.</h2>
+            <p>
+              This is the beginning of an open public ledger. See what we’ve collected, what’s
+              missing, and how you can help.
+            </p>
+          </div>
+          <a href="#about" class="button light"
+            >See the roadmap <span aria-hidden="true">↗</span></a
+          >
+        </section>
+      </section>
+      <section id="taxes" class="page" aria-labelledby="tax-title" hidden>
+        <div class="page-intro">
+          <p class="section-kicker">Your taxes, explained</p>
+          <h1 id="tax-title">Follow your dollar.</h1>
+          <p>
+            Turn an assessed property value into a clear picture of the public budgets it supports.
+          </p>
+        </div>
+        <div class="tax-layout">
+          <form id="tax-form" class="tax-controls">
+            <div class="year-label"><span class="status-dot"></span> Published 2025 tax rates</div>
+            <label for="property-value">Your assessed property value</label>
+            <div class="currency-input">
+              <span aria-hidden="true">$</span
+              ><input
+                id="property-value"
+                type="number"
+                min="0"
+                max="100000000"
+                step="1000"
+                value="600000"
+                inputmode="decimal"
+                aria-describedby="value-help tax-error"
+              />
+            </div>
+            <p id="value-help" class="help">
+              Use the assessed value on your tax bill, which may differ from market value.
+            </p>
+            <label for="value-range" class="sr-only">Adjust assessed value</label
+            ><input
+              id="value-range"
+              type="range"
+              min="100000"
+              max="2000000"
+              step="10000"
+              value="600000"
+            />
+            <div class="range-labels" aria-hidden="true"><span>$100k</span><span>$2m</span></div>
+            <label for="tax-district">Tax category</label
+            ><select id="tax-district"></select>
+            <p class="help">
+              Find the category code on your bill. Precinct eligibility is not determined by this
+              tool.
+            </p>
+            <p id="tax-error" role="alert"></p>
+            <div class="tax-total">
+              <span>Illustrative annual tax</span><strong id="annual-tax">$7,566</strong
+              ><span id="tax-rate-label">$12.61 per $1,000 of assessed value</span>
+            </div>
+            <button class="button outline" type="button" id="download-tax">
+              Download this breakdown <span aria-hidden="true">↓</span>
+            </button>
+          </form>
+          <div class="tax-visual">
+            <div class="donut-wrap">
+              <svg
+                viewBox="0 0 320 320"
+                id="tax-donut"
+                role="img"
+                aria-label="Tax allocation by public budget"
+              ></svg>
+              <div class="donut-center">
+                <span>Every dollar</span><strong id="donut-rate">100<span>¢</span></strong
+                ><span>accounted for in the rate</span>
+              </div>
+            </div>
+            <div id="tax-breakdown" class="tax-breakdown"></div>
+          </div>
+        </div>
+        <div class="note-panel">
+          <strong>An illustration, not a tax bill.</strong>
+          <p id="tax-limitations"></p>
+          <p>
+            Source:
+            <a href="https://hamptonnh.gov/153/Assessing" target="_blank" rel="noopener"
+              >Town of Hampton, 2025 tax-rate table ↗</a
+            >
+            ·
+            <button class="inline-button" data-record="hampton-assessing">
+              Inspect archived evidence
+            </button>
+          </p>
+        </div>
+        <div class="two-column section-space">
+          <div>
+            <h2>Why can my bill change?</h2>
+            <p>
+              Your bill reflects both the tax rate and your assessed value. Changes in budgets,
+              other revenues, and the town’s taxable value can all affect the rate. A lower rate
+              alone does not mean a lower bill.
+            </p>
+          </div>
+          <div>
+            <h2>What would savings mean?</h2>
+            <p>
+              Actual tax relief depends on which public body saves money, whether the saving recurs,
+              and how it changes the amount raised through property taxes. We will track proposed,
+              adopted, and realized savings separately.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="spending" class="page" aria-labelledby="spending-title" hidden>
+        <div class="page-intro">
+          <p class="section-kicker">Town spending</p>
+          <h1 id="spending-title">
+            The numbers.<br />
+            With the context.
+          </h1>
+          <p>Explore town operating finances in the 2024 and 2025 annual reports.</p>
+        </div>
+        <div class="report-banner">
+          <label for="spending-year"
+            >Reporting year
+            <select id="spending-year">
+              <option value="2025">2025</option>
+              <option value="2024">2024</option>
+            </select></label
+          ><strong>Unaudited annual-report summary</strong
+          ><button class="inline-button" id="spending-source" data-record="hampton-annual-2025">
+            Read the source ↗
+          </button>
+        </div>
+        <div class="finance-feature">
+          <div>
+            <span class="section-kicker">Reported operating expenses, including encumbrances</span>
+            <div class="finance-amount" id="operating-total"></div>
+            <p>
+              Includes <strong id="encumbrance-total"></strong> in purchase orders. Excludes
+              expenditures related to warrant articles.
+            </p>
+          </div>
+          <div class="budget-meter">
+            <div class="meter-title">
+              <strong id="budget-percent">94.09%</strong
+              ><span>of the reported operating budget used</span>
+            </div>
+            <div class="meter-track"><div id="budget-fill" style="width: 94.09%"></div></div>
+            <p>
+              <span id="budget-remainder">5.91%</span> reported under budget. Unspent authorization
+              is not automatically a recurring saving.
+            </p>
+          </div>
+        </div>
+        <div class="finance-rows" id="finance-rows"></div>
+        <div class="note-panel">
+          <strong>What this number does—and doesn’t—tell us</strong>
+          <p id="spending-limitations"></p>
+          <p>
+            This release does not yet contain a complete general ledger, vendor payment register, or
+            invoice collection. We cannot calculate transaction coverage or identify verified
+            savings from these summary figures alone.
+          </p>
+        </div>
+        <section class="section-space">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Building the evidence trail</p>
+              <h2>From permission to payment.</h2>
+            </div>
+          </div>
+          <div class="trace-flow">
+            <div>
+              <span class="trace-number">1</span>
+              <h3>Authorize</h3>
+              <p>Budget, warrant article, and public vote.</p>
+              <span class="tag">Source directories indexed</span>
+            </div>
+            <div>
+              <span class="trace-number">2</span>
+              <h3>Commit</h3>
+              <p>Bid, contract, and purchase order.</p>
+              <span class="tag">Procurement index collected</span>
+            </div>
+            <div>
+              <span class="trace-number">3</span>
+              <h3>Pay</h3>
+              <p>Invoice, payment, and account entry.</p>
+              <span class="tag pending">Records needed</span>
+            </div>
+            <div>
+              <span class="trace-number">4</span>
+              <h3>Deliver</h3>
+              <p>Completed work and service results.</p>
+              <span class="tag pending">Records needed</span>
+            </div>
+          </div>
+          <p class="source-note">
+            These are collection stages, not claims about a specific project.
+          </p>
+        </section>
+      </section>
+      <section id="records" class="page" aria-labelledby="records-title" hidden>
+        <div class="page-intro">
+          <p class="section-kicker">The evidence library</p>
+          <h1 id="records-title">Go straight to the source.</h1>
+          <p>
+            Search collected public records and source directories. Open an original, inspect the
+            text, or download a preserved copy.
+          </p>
+        </div>
+        <div class="search-toolbar">
+          <label class="search-box" for="record-search"
+            ><svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              aria-hidden="true"
+            >
+              <circle cx="10.5" cy="10.5" r="7" />
+              <path d="m16 16 5 5" /></svg
+            ><input
+              id="record-search"
+              type="search"
+              placeholder="Search budgets, meetings, contracts…"
+              autocomplete="off"
+            /><kbd aria-hidden="true">/</kbd></label
+          ><label class="sr-only" for="record-category">Filter records</label
+          ><select id="record-category">
+            <option value="all">All records</option>
+            <option value="Finance">Finance & taxes</option>
+            <option value="Meetings">Meetings & decisions</option>
+            <option value="Procurement">Procurement</option>
+            <option value="Schools">Schools</option>
+          </select>
+        </div>
+        <div class="results-meta">
+          <span id="record-count" role="status" aria-live="polite"></span
+          ><button class="inline-button" id="download-index">Download collection index ↓</button>
+        </div>
+        <div id="record-results"></div>
+        <div id="records-empty" class="empty-state" hidden>
+          <h2>No matching records yet.</h2>
+          <p>
+            Try a broader term or another category. An empty result means it is not in this
+            collection; it does not establish that the record does not exist.
+          </p>
+          <button class="button outline" id="clear-search">Clear search</button>
+        </div>
+        <div class="note-panel">
+          <strong>A growing collection, with visible limits.</strong>
+          <p>
+            Source directories help you locate official records; they are not a complete archive of
+            their linked documents. Meeting transcripts and a full historical archive are not yet
+            included. Collection dates describe retrieval, not when every fact was last updated.
+          </p>
+        </div>
+      </section>
+      <section id="about" class="page" aria-labelledby="about-title" hidden>
+        <div class="page-intro">
+          <p class="section-kicker">Our method</p>
+          <h1 id="about-title">
+            Trust the trail.<br />
+            Check our work.
+          </h1>
+          <p>
+            Hampton Ledger is a resident-led, open-source project. Our purpose is to make public
+            finances understandable and help residents identify well-supported improvements.
+          </p>
+        </div>
+        <div class="method-layout">
+          <div>
+            <h2>Evidence before conclusions.</h2>
+            <p>
+              Every financial claim on this site points back to a public source. We preserve
+              retrieved records, record their content hashes, and explain our calculations. You can
+              inspect the same material we used.
+            </p>
+            <p>
+              A missing record means our evidence is incomplete. It does not, by itself, establish
+              waste, wrongdoing, or a legal violation.
+            </p>
+            <p>
+              Hampton Ledger is independent of the Town of Hampton and other public bodies. It is
+              not an official tax service or a professional financial audit.
+            </p>
+            <a
+              href="https://github.com/brandonbryant12/hampton-ledger/blob/main/docs/methodology.md"
+              class="text-link"
+              target="_blank"
+              rel="noopener"
+              >Read the full methodology ↗</a
+            >
+          </div>
+          <div class="coverage-card">
+            <h2>Where we stand</h2>
+            <dl>
+              <div>
+                <dt>2025 tax-rate model</dt>
+                <dd class="coverage-ready">Published</dd>
+              </div>
+              <div>
+                <dt>2024–2025 finance summaries</dt>
+                <dd class="coverage-ready">Published</dd>
+              </div>
+              <div>
+                <dt>Public source collection</dt>
+                <dd class="coverage-ready" id="coverage-count">In progress</dd>
+              </div>
+              <div>
+                <dt>Transaction-level ledger</dt>
+                <dd>Not collected</dd>
+              </div>
+              <div>
+                <dt>Complete meeting archive</dt>
+                <dd>Not collected</dd>
+              </div>
+              <div>
+                <dt>AI-reviewed findings</dt>
+                <dd>Not published</dd>
+              </div>
+              <div>
+                <dt>Verified savings</dt>
+                <dd>Not established</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+        <section class="section-space">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">The next evidence to collect</p>
+              <h2>An open research agenda.</h2>
+            </div>
+            <a
+              href="https://github.com/brandonbryant12/hampton-ledger/issues"
+              class="text-link"
+              target="_blank"
+              rel="noopener"
+              >Follow the work on GitHub ↗</a
+            >
+          </div>
+          <div id="request-list" class="request-list"></div>
+          <p class="source-note">
+            These are planned records requests. No request has been submitted by this website.
+          </p>
+          <button class="button outline" id="download-request">
+            Download a draft records request ↓
+          </button>
+        </section>
+        <div class="two-column section-space">
+          <div>
+            <h2>Useful AI needs reliable evidence.</h2>
+            <p>
+              Future tools can connect records, find discrepancies, and summarize meetings with page
+              and timestamp citations. Calculations will remain reproducible, and potential findings
+              will require human review before publication.
+            </p>
+            <p>There is no AI analysis running on this release.</p>
+          </div>
+          <div>
+            <h2>Built to be shared.</h2>
+            <p>
+              The code, data model, collection scripts, and methodology are public. Other
+              communities can adapt the project while keeping their own rules, accounts, and sources
+              explicit.
+            </p>
+            <p>
+              Found an error or a missing source? Open an issue with a link to the evidence. Please
+              do not submit private personal information.
+            </p>
+            <a
+              class="button primary"
+              href="https://github.com/brandonbryant12/hampton-ledger/issues/new?template=correction.yml"
+              target="_blank"
+              rel="noopener"
+              >Suggest a correction <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-brand">Hampton Ledger<span>Public money. Public understanding.</span></div>
+      <p>Independent civic research for Hampton, New Hampshire.</p>
+      <div>
+        <a href="#about">Methodology</a
+        ><a href="https://github.com/brandonbryant12/hampton-ledger" target="_blank" rel="noopener"
+          >GitHub ↗</a
+        ><a href="/data/records.json" download>Open data ↓</a>
+      </div>
+    </footer>
+    <dialog id="record-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-top">
+        <span id="dialog-category"></span
+        ><button id="close-dialog" class="close-button" aria-label="Close record">×</button>
+      </div>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-description"></p>
+      <div id="dialog-meta" class="dialog-meta"></div>
+      <div id="dialog-links" class="dialog-links"></div>
+      <details>
+        <summary>Preservation details</summary>
+        <div id="dialog-provenance"></div>
+      </details>
+      <h3>Searchable source text</h3>
+      <p class="source-note">
+        Automated extraction may contain formatting errors. Consult the original for authoritative
+        context.
+      </p>
+      <pre id="dialog-text" tabindex="0"></pre>
+    </dialog>
+    <noscript
+      ><div class="note-panel">
+        Enable JavaScript to use the interactive explorer. You can still
+        <a href="/data/finance.json">download the financial data</a>,
+        <a href="/data/records.json">read the record index</a>, or visit
+        <a href="https://hamptonnh.gov/153/Assessing">Hampton’s official tax information</a>.
+      </div></noscript
+    >
+  </body>
+</html>

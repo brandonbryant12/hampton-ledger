@@ -1,6 +1,6 @@
 name: Correct a fact or source
 description: Help improve a published figure, record, or explanation.
-title: "[Correction] "
+title: '[Correction] '
 body:
   - type: textarea
     id: issue
