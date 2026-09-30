@@ -33,7 +33,7 @@ test('record search reaches actual meeting text and handles empty results',async
  await page.getByRole('button',{name:'Close record'}).click();
  await page.locator('#record-search').fill('zzzz-no-such-record-zzzz');
  await expect(page.getByRole('heading',{name:'No matching records yet.'})).toBeVisible();
- await page.getByRole('button',{name:'Clear search'}).click();await expect(page.locator('.record-row')).toHaveCount(23);
+ await page.getByRole('button',{name:'Clear search'}).click();const recordCount=(await (await page.request.get('/data/records.json')).json()).records.length;await expect(page.locator('.record-row')).toHaveCount(recordCount);
 });
 test('mobile routes do not overflow and remain usable',async({page})=>{
  await page.setViewportSize({width:390,height:844});

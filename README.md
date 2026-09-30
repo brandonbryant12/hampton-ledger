@@ -21,8 +21,14 @@ npm test
 
 ## Scope
 
-Initial release: 2025 tax-rate explorer, sourced 2024 town operating-finance summary, searchable public-record archive, and a transparent collection roadmap. This is not a transaction-level audit. See docs/methodology.md.
+Initial release: 2025 tax-rate explorer, sourced 2024 and 2025 town operating-finance summaries, searchable public-record archive, and a transparent collection roadmap. This is not a transaction-level audit. See docs/methodology.md.
 
 ## License
 
 Application code: MIT. Public records retain their original legal status; inclusion does not imply town endorsement.
+
+## Live site
+
+https://hampton.brandonbryant.io
+
+See [methodology](docs/methodology.md), [deployment and collection](docs/deployment.md), and [contributing](CONTRIBUTING.md). The weekly collector saves review artifacts; it does not automatically publish claims or send records requests.

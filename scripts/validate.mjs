@@ -16,10 +16,12 @@ for(const r of collection.records){
  assert(bytes.length<25*1024*1024,'Asset exceeds Cloudflare size limit');
 }
 assert(ids.has(finance.tax.source));assert(ids.has(finance.operating.source));
-const annual=collection.records.find(r=>r.id===finance.operating.source);
+for(const report of finance.history){
+const annual=collection.records.find(r=>r.id===report.source);assert(annual,'Missing annual source');
 for(const key of ['expensesIncludingEncumbrances','encumbrances','otherRevenue','townTaxEffort','totalTaxEffort']){
- const number=finance.operating[key].toLocaleString('en-US');
+ const number=report[key].toLocaleString('en-US');
  assert(annual.text.includes(number),'Missing finance evidence for '+key);
+}
 }
 for(const d of finance.tax.districts){
  const sum=finance.tax.rates.reduce((s,r)=>s+r.rate,0)+d.rate;

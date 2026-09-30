@@ -1,0 +1,17 @@
+{
+  "name": "hampton-ledger",
+  "account_id": "3e6bee864bbbde28ce0664d8a2d256dd",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-09-30",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "routes": [
+    {
+      "pattern": "hampton.brandonbryant.io",
+      "custom_domain": true
+    }
+  ]
+}

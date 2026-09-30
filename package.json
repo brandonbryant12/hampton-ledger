@@ -8,6 +8,6 @@
     "test": "node --test --test-concurrency=2 test/*.test.mjs",
     "ingest": "node scripts/ingest.mjs",
     "validate": "node scripts/validate.mjs",
-    "deploy": "wrangler deploy"
+    "deploy": "node scripts/deploy.mjs"
   }
 }
