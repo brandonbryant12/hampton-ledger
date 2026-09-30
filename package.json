@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "node scripts/serve.mjs",
-    "test": "node --test --test-concurrency=2",
+    "test": "node --test --test-concurrency=2 test/*.test.mjs",
     "ingest": "node scripts/ingest.mjs",
     "validate": "node scripts/validate.mjs",
     "deploy": "wrangler deploy"

@@ -1,0 +1,27 @@
+DRAFT — NOT SUBMITTED
+To: Town of Hampton records custodian
+From: [Your name and contact information]
+Date: [Date]
+
+Subject: RSA 91-A request — existing financial exports for 2024 and 2025
+
+Pursuant to New Hampshire RSA 91-A, I request access to the following existing governmental records for the Town's fiscal years 2024 and 2025:
+
+1. The chart of accounts and any existing data dictionary identifying funds, departments, account codes, and transaction types.
+2. Existing general-ledger transaction exports or reports, including dates, amounts, account/fund codes, descriptions, and available reference numbers.
+3. Existing accounts-payable payment registers, including available vendor names, payment dates, amounts, invoice or purchase-order references, and void/reversal status.
+4. Existing year-end budget-to-actual reports and reconciliation schedules.
+
+Please provide records in the electronic format in which they are maintained, or an existing standard export such as CSV or XLSX if available. I am requesting existing records, not the creation of a new analysis or report.
+
+Please omit or redact protected personal information, including bank-account numbers, Social Security numbers, tax identifiers, and protected beneficiary information. Please provide any reasonably segregable non-exempt portions.
+
+If records are withheld, please identify the specific exemption and explain its application. If fees are anticipated, please provide an itemized estimate before incurring them. Please identify any available public-interest fee waiver and the basis for its application.
+
+The purpose is to improve public understanding of municipal finances through an independent, open-source transparency project. I welcome a discussion of reasonable scope adjustments or staged production using existing reports.
+
+Thank you,
+[Your name]
+
+Before sending: verify the current statute, correct custodian, date range, and whether records are already published. This template is a starting point, not legal advice.
+Official statute: https://www.gc.nh.gov/rsa/html/VI/91-A/91-A-4.htm

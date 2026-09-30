@@ -1,0 +1,108 @@
+{
+  "sources": [
+    {
+      "id": "hampton-assessing",
+      "title": "2025 property-tax rates",
+      "category": "Finance",
+      "entity": "Town of Hampton",
+      "period": "2025 tax year",
+      "kind": "Official rate table",
+      "url": "https://hamptonnh.gov/153/Assessing",
+      "description": "Town, school, county, and precinct rates, plus an explanation of how property taxes are calculated."
+    },
+    {
+      "id": "hampton-agendas",
+      "title": "Town agendas & minutes",
+      "category": "Meetings",
+      "entity": "Town of Hampton",
+      "kind": "Source directory",
+      "url": "https://hamptonnh.gov/agendacenter",
+      "description": "Meeting listings for the Select Board, Budget Committee, and other boards. Linked meeting documents are not yet fully archived."
+    },
+    {
+      "id": "hampton-election",
+      "title": "2026 budgets & town meeting",
+      "category": "Finance",
+      "entity": "Town of Hampton",
+      "period": "2026 town meeting",
+      "kind": "Source directory",
+      "url": "https://hamptonnh.gov/736/Town-Meeting-March-Election-Information",
+      "description": "Official entry point for proposed budgets, warrant articles, election results, and tax-impact calculators."
+    },
+    {
+      "id": "hampton-bids",
+      "title": "Town procurement opportunities",
+      "category": "Procurement",
+      "entity": "Town of Hampton",
+      "kind": "Source directory",
+      "url": "https://hamptonnh.gov/Bids.aspx",
+      "description": "Published bids for goods, services, and public works. A bid notice is not evidence of a contract award or payment."
+    },
+    {
+      "id": "hampton-purchasing",
+      "title": "Town purchasing policy",
+      "category": "Procurement",
+      "entity": "Town of Hampton",
+      "kind": "Policy",
+      "url": "https://hamptonnh.gov/684/Purchasing-Policy",
+      "description": "Published procurement requirements and exceptions. Confirm the policy effective on the date of any purchase."
+    },
+    {
+      "id": "hampton-budget-committee",
+      "title": "Municipal Budget Committee",
+      "category": "Meetings",
+      "entity": "Town of Hampton",
+      "kind": "Source directory",
+      "url": "https://hamptonnh.gov/349/Municipal-Budget-Committee",
+      "description": "Budget Committee information and links to budget documents, warrants, and meeting materials."
+    },
+    {
+      "id": "sau90-meetings",
+      "title": "Hampton School District meetings",
+      "category": "Schools",
+      "entity": "Hampton School District · SAU 90",
+      "kind": "Source directory",
+      "url": "https://www.sau90.org/page/meetings-agendas-minutes",
+      "description": "Official school board meeting information. External documents and embedded portals may require following the source links."
+    },
+    {
+      "id": "winnacunnet-budgets",
+      "title": "Winnacunnet budget resources",
+      "category": "Schools",
+      "entity": "Winnacunnet · SAU 21",
+      "period": "2026–27 and earlier",
+      "kind": "Source directory",
+      "url": "https://www.sau21.nh.gov/departments/business/budgets",
+      "description": "SAU 21 budget presentations and summaries, including Winnacunnet. The page also contains other school districts."
+    },
+    {
+      "id": "winnacunnet-meetings",
+      "title": "Winnacunnet School Board records",
+      "category": "Schools",
+      "entity": "Winnacunnet · SAU 21",
+      "kind": "Source directory",
+      "url": "https://www.sau21.nh.gov/school-boards/winnacunnet/meetings",
+      "description": "Official gateway to school board agendas, minutes, videos, and policies in BoardDocs."
+    }
+  ],
+  "requests": [
+    {
+      "title": "General ledger & account map",
+      "description": "Existing electronic ledger exports and chart of accounts for completed fiscal years, with funds, departments, account codes, dates, and transaction references."
+    },
+    {
+      "title": "Payments & vendor register",
+      "description": "Existing accounts-payable payment records, including reversals and voids. Exclude bank details, tax identifiers, and protected personal information."
+    },
+    {
+      "title": "Contracts & purchase orders",
+      "description": "Contract register, amendments, purchase orders, procurement justifications, and supporting invoices for selected projects."
+    },
+    {
+      "title": "Budget changes & reconciliation",
+      "description": "Adopted and amended budgets, monthly financial reports, and existing reconciliation schedules connecting accounting records to published totals."
+    }
+  ],
+  "discoverMeetings": true,
+  "meetingLimit": 12
+}

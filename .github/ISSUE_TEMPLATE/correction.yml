@@ -1,0 +1,23 @@
+name: Correct a fact or source
+description: Help improve a published figure, record, or explanation.
+title: "[Correction] "
+body:
+  - type: textarea
+    id: issue
+    attributes:
+      label: What should change?
+      description: Include the page or figure. Do not include private personal information.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Supporting public source
+      placeholder: https://hamptonnh.gov/...
+    validations:
+      required: true
+  - type: textarea
+    id: explanation
+    attributes:
+      label: Explanation
+      description: Explain how the source supports the correction.

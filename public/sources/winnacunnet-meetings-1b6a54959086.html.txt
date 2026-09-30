@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" class="cs-alert-banner-active">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Winnacunnet Meetings | Winnacunnet School Board</title>
+
+        <!-- METADATA -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta  name="description" content="Winnacunnet Meetings" />
+<meta  property="og:type" content="website" />
+<meta  property="og:url" content="https://www.sau21.nh.gov/school-boards/winnacunnet/meetings" />
+<meta  property="og:title" content="Winnacunnet Meetings" />
+<meta  property="og:description" content="Winnacunnet Meetings" />
+<meta  name="twitter:card" content="summary" />
+<meta  name="twitter:title" content="Winnacunnet Meetings" />
+<meta  name="twitter:description" content="Winnacunnet Meetings" />
+<meta  name="campussuite:tenant" content="1558718" />
+<meta  name="campussuite:site" content="1619021" />
+<meta  name="campussuite:department" content="1619063" />
+<meta  name="campussuite:theme" content="1572844" />
+<meta  name="campussuite:outer_layout" content="1573419" />
+<meta  name="campussuite:inner_layout" content="1595163" />
+<meta  name="campussuite:module" content="page" />
+<meta  name="campussuite:content" content="1650749" />
+
+        <!-- BASE -->
+        
+        <!-- FAVICONS -->
+        			<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://campussuite-storage.s3.amazonaws.com/prod/1558718/e7fa12dc-6862-11e9-88e9-0a2901a6873e/1619021/421fa3d2-7ced-11e9-8e76-0a4c3cd8c12c/favicon/144" />
+			<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://campussuite-storage.s3.amazonaws.com/prod/1558718/e7fa12dc-6862-11e9-88e9-0a2901a6873e/1619021/421fa3d2-7ced-11e9-8e76-0a4c3cd8c12c/favicon/114" />
+			<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://campussuite-storage.s3.amazonaws.com/prod/1558718/e7fa12dc-6862-11e9-88e9-0a2901a6873e/1619021/421fa3d2-7ced-11e9-8e76-0a4c3cd8c12c/favicon/72" />
+			<link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://campussuite-storage.s3.amazonaws.com/prod/1558718/e7fa12dc-6862-11e9-88e9-0a2901a6873e/1619021/421fa3d2-7ced-11e9-8e76-0a4c3cd8c12c/favicon/57" />
+			<link rel="icon" type="image/png" sizes="16x16" href="https://campussuite-storage.s3.amazonaws.com/prod/1558718/e7fa12dc-6862-11e9-88e9-0a2901a6873e/1619021/421fa3d2-7ced-11e9-8e76-0a4c3cd8c12c/favicon/16" />
+        
+        <!-- FONTS -->
+<link  rel="stylesheet" type="text/css" href="https://cdn.campussuite.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+        <!-- STYLES -->
+
+        <link type="text/css" rel="stylesheet" href="https://campussuite-storage.s3.amazonaws.com/prod/1558718/e7fa12dc-6862-11e9-88e9-0a2901a6873e/1572844/db2ec4b4-48fd-11ee-9feb-0a58a9feac02/compiled/min?v=1706906992" />
+
+        <!-- HEAD SCRIPTS -->
+        <script>
+            window.CAMPUSSUITE = {
+    "environment": "prod",
+    "tenant": {
+        "id": 1558718,
+        "uid": "e7fa12dc-6862-11e9-88e9-0a2901a6873e",
+        "slug": "sau21"
+    },
+    "dashboard": "app.campussuite.com",
+    "container": 1619063
+};
+        </script>
+        <!--[if lt IE 9]>
+            <script src="https://cdn.campussuite.com/html5shiv/3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.campussuite.com/respond/1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+        <script src="https://cdn.campussuite.com/sugar/1.4.1/release/sugar.min.js"></script>
+        <script src="https://cdn.campussuite.com/headjs/1.0.3/dist/1.0.0/head.min.js"></script>
+        <script src="https://cdn.campussuite.com/jquery2/2.2.4/dist/jquery.min.js"></script>
+        <script src="https://cdn.campussuite.com/jquery-migrate/1.4.1/dist/jquery-migrate.min.js"></script>
+        <script src="https://cdn.campussuite.com/match-height/0.7.0/dist/jquery.matchHeight-min.js"></script>
+        <script src="https://cdn.campussuite.com/clipboardjs/2.0.4/dist/clipboard.js"></script>
+<script type="text/javascript" src="https://app.campussuite.com/bundles/cmscore/campussuite.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0X37M70LS6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0X37M70LS6');
+</script>
+
+    </head>
+
+    <body >
+
+        <!-- TOP SCRIPTS -->
+
+
+
+        <!-- CONTENT -->
+        <div class="root">
+                        <!--Windsor Outer C-->
+<!--Begin Wrapper-->
+<div class="wrapper">
+
+    <!--Skip Navigation-->
+    <div class="skip-to-content"><a href="#main">Skip to Main Content</a></div><!--Alert Banner-->
+    <div data-cms-widget="widgets/AlertBanner/AlertBanner" id="cms-widget-d31722c0-8e1d-482b-b74c-3f68d3f718d3">
+                <div class="cs-alert-banner">
+        <div class="cs-alert-banner__wrap cs-alert-banner__wrap--important">
+            <div class="cs-alert-banner__content owl-carousel">
+                                    <div class="cs-alert-banner__item cs-alert-banner__item--important cs-owl-carousel-li">
+                        <p class="cs-alert-banner__msg">
+                            <a href="https://www.sau21.nh.gov/files/alerts/2026-09-16-SSB-Notice%20of%20Vacancy.pdf" target="_blank">
+                                <span>                                        <img
+                                            class="cs-alert-banner__item-image"
+                                            src="/ui/themes/alert-important-icon-white.svg"
+                                            alt=""
+                                        />
+                                    Seabrook School Board Notice of Vacancy
+                                                                    </span>
+                            </a>
+                        </p>
+                    </div>
+                                    <div class="cs-alert-banner__item cs-alert-banner__item--important cs-owl-carousel-li">
+                        <p class="cs-alert-banner__msg">
+                            <a href="https://www.sau21.nh.gov/files/alerts/2026-09-WSB-Notice%20of%20Vacancies.pdf" target="_blank">
+                                <span>                                        <img
+                                            class="cs-alert-banner__item-image"
+                                            src="/ui/themes/alert-important-icon-white.svg"
+                                            alt=""
+                                        />
+                                    Winnacunnet School Board Notice of Vacancy
+                                                                    </span>
+                            </a>
+                        </p>
+                    </div>
+                            </div>
+        </div>
+            </div>
+    </div>
+    <script type="text/javascript">
+        Campussuite.Widgets.run({
+    "styles": [
+        "\/ui\/overrides\/owl-carousel\/owl.carousel.min.css"
+    ],
+    "scripts": [
+        "https:\/\/cdn.campussuite.com\/bootstrap\/3.4.1\/dist\/js\/bootstrap.min.js",
+        "\/ui\/overrides\/owl-carousel\/owl.carousel.min.js",
+        "\/ui\/overrides\/owl-carousel\/owl.playback.js"
+    ],
+    "plugin": "AlertBanner",
+    "pluginId": "cms-widget-d31722c0-8e1d-482b-b74c-3f68d3f718d3",
+    "pluginOptions": {
+        "autoplay": true,
+        "speed": 5000,
+        "loop": true
+    }
+});
+    </script>
+
+
+    <!--Begin Header-->
+    <header class="header" id="cs-header">
+
+       	<div class="content-overlay"></div>
+		
+		<!--Search Form-->
+		<div data-cms-widget="widgets/HtmlSource/HtmlSource" id="cms-widget-046d0120-c293-4df0-a5b9-acdf36817592" class="header__search">
+            <form class="header__search-form" action="/search-results">
+    <label for="header-search" class="sr-only">Header Search</label>
+    <input type="hidden" value="001520574668916526176:ynzhzsbyrts" name="cx">
+    <input type="hidden" value="FORID:9" name="cof">
+    <input type="hidden" value="UTF-8" name="ie">
+    <input class="header__search-input" id="header-search" type="text" placeholder="Search site..." name="q" title="Search" value="">
+    <button class="header__search-button" type="submit" aria-label="Search">
+        <em class="header__search-icon fa fa-search" aria-hidden="true" title="Search this site"></em>
+    </button>
+</form>    </div>
+
+
+		<!--Begin Header Top-->
+      	<div class="header__topbar">
+      		<div class="header__row">
+				<div class="header__topbar-left">
+					<div class="header__topbar-block">
+						<div data-cms-widget="widgets/Html/Html" id="cms-widget-f451032e-3f23-4dca-98ac-e7899f364826" class="header__phone">
+            <p>(603) 926-8992</p>
+
+    </div>
+
+					</div>
+					<div class="header__topbar-block">
+						<div data-cms-widget="widgets/Html/Html" id="cms-widget-036e8686-81a9-4179-8980-f7262ec4f04f" class="header__location">
+            <p>2 Alumni Drive, Hampton, NH 03842</p>
+
+    </div>
+
+					</div>
+					<div class="header__topbar-block">
+						
+					</div>
+					<div class="header__topbar-block">
+						
+					</div>
+				</div>
+				<div class="header__topbar-right">
+					<div class="header__topbar-block">
+						
+					</div>
+					<div class="header__topbar-block">
+						<div data-cms-widget="widgets/Block/Block" id="cms-widget-7f00106f-c50f-451d-87e0-58b4ba0877e5" class="header__translate">
+                        <div data-editor-region-inline>
+            <div data-cms-widget="widgets/Html/Html" id="cms-widget-e9d7f97e-c8c4-4e74-a2c3-f4023b08cd02" class="header__translate-title">
+            <p>Translate</p>
+
+    </div>
+
+
+<div data-cms-widget="widgets/GoogleTranslate/GoogleTranslate" id="cms-widget-198ec89a-07ac-4959-8673-15a50217a096">
+            <div class="google-translate" id="google_translate_element"></div>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+                            includedLanguages: 'ar,zh-CN,en,pt,es',
+                        layout: google.translate.TranslateElement.InlineLayout.VERTICAL,
+                            gaTrack: true,
+                gaId: '123'
+                    }, 'google_translate_element');
+
+                    // remove the powered by
+            // select all direct children but the first div and remove them
+            // need to include text nodes
+            $('#google_translate_element > div.skiptranslate').contents().slice(1).remove();
+            }
+</script>
+    </div>
+    <script type="text/javascript">
+        Campussuite.Widgets.run({
+    "styles": [],
+    "scripts": [
+        "https:\/\/translate.google.com\/translate_a\/element.js?cb=googleTranslateElementInit"
+    ],
+    "plugin": null,
+    "pluginId": "cms-widget-198ec89a-07ac-4959-8673-15a50217a096",
+    "pluginOptions": {}
+});
+    </script>
+
+        </div>
+        </div>
+
+					</div>
+					<div class="header__topbar-block">
+						<div data-cms-widget="widgets/ButtonDropdown/ButtonDropdown" id="cms-widget-ae4cff18-170c-4888-8fe5-096ab7bd38f7" class="header__utility-dropdown header__utility-dropdown--schools">
+            
+<div class="cs-button-group cs-button-wrap  ">
+            <button
+            type="button"
+            class="header__utility-dropdown-link  dropdown-toggle"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+        ><span>Schools</span>
+                            <span class="caret"></span>
+                    </button>
+                <ul class="dropdown-menu">
+                                                <li>
+                        <a href="/barnard/index">
+                                                        <span>Barnard School</span>
+                        </a>
+                    </li>
+                                                                <li>
+                        <a href="/las/index">
+                                                        <span>Lincoln Akerman School</span>
+                        </a>
+                    </li>
+                                                                <li>
+                        <a href="https://www.northhamptonschool.org/" target="_blank">
+                                                        <span>North Hampton School</span>
+                        </a>
+                    </li>
+                                                                <li>
+                        <a href="/ses">
+                                                        <span>Seabrook Elementary School</span>
+                        </a>
+                    </li>
+                                                                <li>
+                        <a href="/sms">
+                                                        <span>Seabrook Middle School</span>
+                        </a>
+                    </li>
+                                                                <li>
+                        <a href="https://www.winnacunnet.org/" target="_blank">
+                                                        <span>Winnacunnet High School</span>
+                        </a>
+                    </li>
+                                    </ul>
+    </div>
+    </div>
+    <script type="text/javascript">
+        Campussuite.Widgets.run({
+    "styles": [],
+    "scripts": [
+        "https:\/\/cdn.campussuite.com\/bootstrap\/3.4.1\/dist\/js\/bootstrap.min.js"
+    ],
+    "plugin": null,
+    "pluginId": "cms-widget-ae4cff18-170c-4888-8fe5-096ab7bd38f7",
+    "pluginOptions": {}
+});
+    </script>
+
+					</div>
+					<div class="header__topbar-block">
+						<div data-cms-widget="widgets/IconGroup/IconGroup" id="cms-widget-3a74537d-9ca2-4c10-ab5a-b24b65d3933c" class="header__utility-group">
+            <ul class="csw
+    cs-icon-group
+    cs-icon-sm
+    cs-icon-left
+    cs-icon-default
+    cs-icon-bg-default
+    cs-icon-text-default
+
+    ">
+
+    <li class="cs-icon-wrap">
+    <a href="/calendar/" >
+                    <em class="cs-icon fa fa-calendar" aria-hidden="true"></em>
+            
+            <span class="cs-icon-text">Calendar</span> <span class="sr-only"></span>
+            </a>
+    </li>
+        <li class="cs-icon-wrap header__search-toggle">
+    <a href="#" >
+                    <em class="cs-icon fa fa-search" aria-hidden="true"></em>
+            
+            <span class="sr-only">Click to display search form </span>
+            </a>
+    </li>
+    </ul>
+    </div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+      	<!--End Header Top-->
+    
+		<!--Begin Header Main-->
+		<div class="header-main">
+
+			<button class="cs-menu-toggle" aria-label="Main menu" aria-expanded="false">
+				<span class="sr-only">Click to toggle main menu</span>
+			</button>
+
+			<!--Begin Header Row--->
+			<div class="header-row">
+				<div class="header-logo"><div data-cms-widget="widgets/Image/Image" id="cms-widget-841e2b4f-b0e6-4037-8e97-157453bd16dc" class="logo">
+            <div class="">
+            <a href="/">
+        <img
+        class="
+            cs-img
+            img-responsive
+                                "
+        src="/files/images/SAU%2021/SAU%2021.png"
+        alt="SAU21 logo"
+    />
+    </a>    
+    </div>
+    </div>
+</div>
+				<!--Begin Drawer-->
+				<div class="drawer">
+					<div class="header-drawer-search"></div>          
+					<div class="header-nav">
+						<div data-cms-widget="widgets/SharedContent/SharedContent" id="cms-widget-7db22b79-0c71-4820-8c65-b72ae6654483">
+            <div data-cms-widget="widgets/MegaMenu/MegaMenu" id="cms-widget-31804f09-9805-434f-bd76-1e8771373f42">
+            <nav class="cs-main-menu" role="navigation" aria-label="Main navigation">
+    <ul class="cs-mmenu-items">
+                                                        <li class="cs-mmenu-li cs-mmenu-dd-basic cs-mmenu-dd-left doubletap">
+                    <div class="cs-mmenu-li-item">
+                        <a class="cs-mmenu-li-item-link" href="/about-us" aria-expanded="false">
+                            <span class="cs-mmenu-li-item-text">About</span>
+                        </a>
+                                                    <button class="cs-mmenu-li-caret" aria-expanded="false">
+                                <span class="sr-only">Show sub menu for About</span>
+                            </button>
+                                            </div>
+                                                    <div class="cs-mmenu-dd-container" role="region" aria-label="Menu" data-editor-region-inline>
+                                <div data-cms-widget="widgets/Html/Html" id="cms-widget-f2ac3785-e4ab-4557-8768-5e756ccab499" class="dd-menu">
+            <ul>
+	<li><a href="/sau-21-leadership-team">Leadership Team</a></li>
+	<li><a href="/privacy-policy">Privacy Policy</a></li>
+	<li><a href="/school-calendars">School Calendars</a></li>
+	<li><a href="/staff-directory">Staff Directory</a></li>
+</ul>
+
+    </div>
+
+                            </div>
+                                        </li>
+                                                <li class="cs-mmenu-li cs-mmenu-dd-basic cs-mmenu-dd-left doubletap">
+                    <div class="cs-mmenu-li-item">
+                        <a class="cs-mmenu-li-item-link" href="/schools" aria-expanded="false">
+                            <span class="cs-mmenu-li-item-text">Schools</span>
+                        </a>
+                                                    <button class="cs-mmenu-li-caret" aria-expanded="false">
+                                <span class="sr-only">Show sub menu for Schools</span>
+                            </button>
+                                            </div>
+                                                    <div class="cs-mmenu-dd-container" role="region" aria-label="Menu" data-editor-region-inline>
+                                <div data-cms-widget="widgets/Html/Html" id="cms-widget-4e1887d0-0673-401c-a132-88f52b5a0bd5" class="dd-menu">
+            <ul>
+	<li><a href="/las/index" target="_blank" title="Hampton Falls - Main menu link">Hampton Falls</a></li>
+	<li><a href="http://northhamptonschool.nh.gov" target="_blank" title="North Hampton - Main menu link">North Hampton</a></li>
+	<li><a href="/ses/index" target="_blank" title="Seabrook Elementary - Main menu link">Seabrook Elementary</a></li>
+	<li><a href="/sms/index" target="_blank" title="Seabrook Middle - Main menu link">Seabrook Middle</a></li>
+	<li><a href="/barnard/index" target="_blank" title="South Hampton - Main menu link">South Hampton</a></li>
+	<li><a href="https://www.winnacunnet.org/" target="_blank" title="Winnacunnet - Main menu link">Winnacunnet</a></li>
+</ul>
+
+    </div>
+
+                            </div>
+                                        </li>
+                                                                    <li class="cs-mmenu-li cs-mmenu-dd-basic cs-mmenu-dd-left doubletap">
+                    <div class="cs-mmenu-li-item">
+                        <a class="cs-mmenu-li-item-link" href="/curriculum/index" aria-expanded="false">
+                            <span class="cs-mmenu-li-item-text">Curriculum</span>
+                        </a>
+                                                    <button class="cs-mmenu-li-caret" aria-expanded="false">
+                                <span class="sr-only">Show sub menu for Curriculum</span>
+                            </button>
+                                            </div>
+                                                    <div class="cs-mmenu-dd-container" role="region" aria-label="Menu" data-editor-region-inline>
+                                <div data-cms-widget="widgets/Html/Html" id="cms-widget-11da5fa2-46bb-45ad-8ee1-6ac9d9547a39" class="dd-menu">
+            <ul>
+	<li><a href="/curriculum/certification-and-evaluation">Certification &amp; Evaluation</a></li>
+	<li><a href="/curriculum/data-and-reporting">Data and Reporting</a></li>
+	<li><a href="/curriculum/new-teacher-mentor-induction-program">New Teacher Induction &amp; Mentoring</a></li>
+	<li><a href="/portrait-of-a-learner/index">Portrait of a Learner</a></li>
+	<li><a href="/curriculum/professional-development">Professional Development</a></li>
+	<li><a href="/curriculum/title-i-ii-iv">Title I, II, and IV</a></li>
+</ul>
+
+    </div>
+
+                            </div>
+                                        </li>
+                                                <li class="cs-mmenu-li cs-mmenu-dd-basic cs-mmenu-dd-left doubletap">
+                    <div class="cs-mmenu-li-item">
+                        <a class="cs-mmenu-li-item-link" href="#" tabindex="-1" aria-expanded="false">
+                            <span class="cs-mmenu-li-item-text">Departments</span>
+                        </a>
+                                                    <button class="cs-mmenu-li-caret" aria-expanded="false">
+                                <span class="sr-only">Show sub menu for Departments</span>
+                            </button>
+                                            </div>
+                                                    <div class="cs-mmenu-dd-container" role="region" aria-label="Menu" data-editor-region-inline>
+                                <div data-cms-widget="widgets/Html/Html" id="cms-widget-f722f03e-1426-47c6-b529-274941a26a88" class="dd-menu">
+            <ul>
+	<li><a href="/departments/accounts-payable/index">Accounts Payable</a></li>
+	<li><a href="/departments/business/index">Business</a></li>
+	<li><a href="/departments/human-resources/index">Human Resources</a></li>
+	<li><a href="/departments/the-office-of-the-superintendent">Office of The Superintendent</a></li>
+	<li><a href="/departments/payroll/index">Payroll</a></li>
+	<li><a href="/departments/student-services/index">Student Services</a></li>
+</ul>
+
+    </div>
+
+                            </div>
+                                        </li>
+                                                <li class="cs-mmenu-li cs-mmenu-dd-basic cs-mmenu-dd-left doubletap">
+                    <div class="cs-mmenu-li-item">
+                        <a class="cs-mmenu-li-item-link" href="#" tabindex="-1" aria-expanded="false">
+                            <span class="cs-mmenu-li-item-text">Community Resources</span>
+                        </a>
+                                                    <button class="cs-mmenu-li-caret" aria-expanded="false">
+                                <span class="sr-only">Show sub menu for Community Resources</span>
+                            </button>
+                                            </div>
+                                                    <div class="cs-mmenu-dd-container" role="region" aria-label="Menu" data-editor-region-inline>
+                                <div data-cms-widget="widgets/Html/Html" id="cms-widget-bffba5a9-f723-4ca8-bab3-5472e2534823" class="dd-menu">
+            <ul>
+	<li><a href="/departments/resources/employee-self-service">Employee Self Service</a></li>
+	<li><a href="/departments/resources/free-and-reduced-application">Free &amp; Reduced Meals</a></li>
+	<li><a href="/departments/resources/parent-resources">Parent Resources</a></li>
+	<li><a href="/departments/resources/parentsquare">ParentSquare</a></li>
+	<li><a href="/departments/resources/powerschool">PowerSchool</a></li>
+	<li><a href="/departments/resources/right-to-know" target="_self">Right-To-Know</a></li>
+	<li><a href="/departments/resources/safety-compliance-and-title-ix">Safety Compliance and Title IX</a></li>
+	<li><a href="/departments/student-services/social-and-emotional-learning">Social &amp; Emotional Learning</a></li>
+	<li><a href="/departments/resources/summer-meals">Summer Meals</a></li>
+</ul>
+
+    </div>
+
+                            </div>
+                                        </li>
+                                                <li class="cs-mmenu-li cs-mmenu-dd-basic cs-mmenu-dd-left doubletap">
+                    <div class="cs-mmenu-li-item">
+                        <a class="cs-mmenu-li-item-link" href="#" tabindex="-1" aria-expanded="false">
+                            <span class="cs-mmenu-li-item-text">School Boards</span>
+                        </a>
+                                                    <button class="cs-mmenu-li-caret" aria-expanded="false">
+                                <span class="sr-only">Show sub menu for School Boards</span>
+                            </button>
+                                            </div>
+                                                    <div class="cs-mmenu-dd-container" role="region" aria-label="Menu" data-editor-region-inline>
+                                <div data-cms-widget="widgets/Html/Html" id="cms-widget-0ca55819-7253-489f-9b8c-a0130b6b06a9" class="dd-menu">
+            <ul>
+	<li><a href="/school-boards/hampton-falls/index">Hampton Falls School Board</a></li>
+	<li><a href="/school-boards/north-hampton/index">North Hampton School Board</a></li>
+	<li><a href="/school-boards/seabrook/index">Seabrook School Board</a></li>
+	<li><a href="/school-boards/south-hampton/index">South Hampton School Board</a></li>
+	<li><a href="/school-boards/winnacunnet/index">Winnacunnet School Board</a></li>
+	<li><a href="/school-boards/joint-board/index">Joint Board</a></li>
+	<li><a href="/school-boards/sau-21-oc/index">SAU 21 Operations</a></li>
+	<li><a href="/school-boards/simbli/index">Simbli</a></li>
+</ul>
+
+    </div>
+
+                            </div>
+                                        </li>
+                                                <li class="cs-mmenu-li cs-mmenu-dd-none">
+                    <div class="cs-mmenu-li-item">
+                        <a class="cs-mmenu-li-item-link" href="https://www.applitrack.com/sau21/onlineapp/default.aspx" target="_blank" aria-expanded="false">
+                            <span class="cs-mmenu-li-item-text">Employment</span>
+                        </a>
+                                            </div>
+                                        </li>
+                        </ul>
+</nav>
+    </div>
+    <script type="text/javascript">
+        Campussuite.Widgets.run({
+    "styles": [],
+    "scripts": [
+        "https:\/\/cdn.campussuite.com\/jquery-doubletaptogo\/3.0.2\/dist\/jquery.dcd.doubletaptogo.min.js"
+    ],
+    "plugin": "MegaMenu",
+    "pluginId": "cms-widget-31804f09-9805-434f-bd76-1e8771373f42",
+    "pluginOptions": {}
+});
+    </script>
+
+    </div>
+
+					</div>
+					<div class="header-drawer-utils"></div>
+					<div class="header-drawer-social"></div>
+				</div>
+				<!--End Drawer-->
+			</div>
+			<!--End Header Row--->
+		</div>
+		<!--End Header Main-->
+        
+    </header>
+    <!--End Header-->
+
+
+	<!--Begin Inner-->
+	<main id="main">
+		<div data-cms-widget="widgets/Zone/Zone" id="cms-widget-a5f71d68-af85-4c49-6db6-294f1936300x" class="content-zone">
+                <div data-cms-widget="widgets/Block/Block" id="cms-widget-54545b5c-a649-4518-b3ca-5d702cbfe6ef" class="inner-header bg-tertiary">
+                        <div class="container" data-editor-region-inline>
+            <div data-cms-widget="widgets/DepartmentName/DepartmentName" id="cms-widget-80249ee8-706a-4ce1-ad35-ba85aa0b743a">
+                <div class="cs-dept-name">Winnacunnet School Board</div>
+    </div>
+
+        </div>
+        </div>
+
+
+<div data-cms-widget="widgets/Block/Block" id="cms-widget-ac21cb50-e249-4906-8387-e6cb2f6774b8" class="inner-main pb-xl">
+                        <div class="container" data-editor-region-inline>
+            <div data-cms-widget="widgets/Row/Row" id="cms-widget-5688dde8-d6ca-4f13-bb52-0e097e1ff9bb">
+            <div class="row">
+            <div class="
+                                    col-md-9                                    
+        " data-editor-region-inline>
+            <div data-cms-widget="widgets/Block/Block" id="cms-widget-b6199414-7683-4c18-bf14-348024dd629d" class="inner-content">
+                        <div data-editor-region-inline>
+            <div data-cms-widget="widgets/Zone/Zone" id="cms-widget-5bc69470-bd39-4911-92ce-000ee6468734" class="content-zone">
+                <div data-cms-widget="widgets/Html/Html" id="cms-widget-0e3d695d-9c0e-4f1c-864c-412af801ae3d">
+            <p>BoardDocs is now being used for all board meeting agendas, minutes, videos, policies and other board-related information and enables the SAU to distribute information quickly and efficiently with greater transparency. &nbsp;</p>
+
+<p>You can find existing minutes and agendas by clicking the drop down arrow and selecting the appropriate School Board in the black bar near the top right side of the screen (see image below).</p>
+
+<p><img alt="" src="/school-boards/boarddocs/files/documents/BoardDocs-Select%20District%20pic.png?mask=16" /></p>
+
+<h2 style="text-align: center;"><a href="https://www.sau21.org/school-boards/boarddocs">Please click HERE to access BoardDocs.</a></h2>
+
+    </div>
+
+    </div>
+
+        </div>
+        </div>
+
+        </div>
+            <div class="
+                                    col-md-3                                    
+        " data-editor-region-inline>
+            <div data-cms-widget="widgets/Navigation/Navigation" id="cms-widget-76780706-6c0c-411d-a0de-d40b91ef7807">
+            <div class="csw cs-side-nav">
+
+        <div class="cs-side-nav-heading">
+        <a href="https://www.sau21.nh.gov/school-boards/winnacunnet">Winnacunnet School Board</a>
+    </div>
+    
+    <ul class="cs-side-nav-t1">
+                                            
+                                                    <li
+                        class=""
+        >
+            <!-- https://www.sau21.org/calendar -->
+            <a
+                href="https://www.sau21.org/calendar"
+                                			   >Meeting Schedule </a>
+                    </li>
+    
+                                                    <li
+                        class=""
+        >
+            <!-- https://www.sau21.nh.gov/school-boards/boarddocs#accessing-agendas-minutes -->
+            <a
+                href="https://www.sau21.nh.gov/school-boards/boarddocs#accessing-agendas-minutes"
+                                			   >Meeting Agendas &amp; Minutes </a>
+                    </li>
+    
+                                                    <li
+                        class=""
+        >
+            <!-- ./meetings-archived -->
+            <a
+                href="https://www.sau21.nh.gov/school-boards/winnacunnet/meetings-archived"
+                                			   >Archived Meetings </a>
+                    </li>
+    
+                                                    <li
+                        class=""
+        >
+            <!-- ./annual-report -->
+            <a
+                href="https://www.sau21.nh.gov/school-boards/winnacunnet/annual-report"
+                                			   >Annual Reports </a>
+                    </li>
+    
+                                                    <li
+                        class=""
+        >
+            <!-- https://www.sau21.nh.gov/school-boards/boarddocs#accessing-policies -->
+            <a
+                href="https://www.sau21.nh.gov/school-boards/boarddocs#accessing-policies"
+                                			   >Policies </a>
+                    </li>
+    
+                                                    <li
+                        class=""
+        >
+            <!-- https://www.youtube.com/@sau-21/streams -->
+            <a
+                href="https://www.youtube.com/@sau-21/streams"
+                target="_blank"                rel="nofollow"			   >Meeting Videos <span class="sr-only">(opens in new window)</span></a>
+                    </li>
+    
+                                                    <li
+                        class=""
+        >
+            <!-- /school-boards/whs-budget-committee -->
+            <a
+                href="https://www.sau21.nh.gov/school-boards/whs-budget-committee"
+                target="_blank"                			   >Budget Committee <span class="sr-only">(opens in new window)</span></a>
+                    </li>
+    
+            </ul>
+</div>
+    </div>
+
+        </div>
+    </div>
+    </div>
+
+        </div>
+        </div>
+
+    </div>
+
+		<!--Acrobat Reader DC Link-->
+		<p class="sr-only">This site provides information using PDF, visit this link to <a href="https://get.adobe.com/reader/" title="Download link opens in new window" target="_blank" tabindex="-1">download the Adobe Acrobat Reader DC software</a>.</p></main>
+	<!--End Inner-->
+
+
+    <!--Begin Our Schools-->
+    
+    <!--End Our Schools-->
+    
+    
+    <!--Begin Footer A-->
+    <footer class="cs-footer-a">
+    
+        <!--Begin Footer Main-->
+        <div class="footer-main">
+            <div class="container">
+                <div data-cms-widget="widgets/Row/Row" id="cms-widget-fd89fa3e-8834-4b3e-8474-6684b0f2221c">
+            <div class="row">
+            <div class="
+                                    col-md-4                                    
+        " data-editor-region-inline>
+            <div data-cms-widget="widgets/Html/Html" id="cms-widget-433189b4-f65e-4ced-944f-94d6c0c3d3e2">
+            <h2 class="text-dark">SAU 21</h2>
+
+<p><span class="large">2 Alumni Drive<br />
+Hampton, NH 03842<br />
+phone: (603) 926-8992<br />
+fax: (603) 926-5157</span></p>
+
+    </div>
+
+        </div>
+            <div class="
+                                    col-md-4                                    
+        " data-editor-region-inline>
+            <div data-cms-widget="widgets/Html/Html" id="cms-widget-09c5f7ef-306a-42a2-81bd-24b79c5c0d5a">
+            <p class="h3" title="Educational Philosophy ">Educational Philosophy</p>
+
+<p>We, the members of the SAU 21 educational community, are committed to developing lifelong learners who are creative and critical thinkers and who contribute to a changing global society. The SAU 21 educational community consists of students, teachers, parents, administrators, school board members and the community-at-large working collaboratively towards this mission.</p>
+
+    </div>
+
+        </div>
+            <div class="
+                                    col-md-4                                    
+        " data-editor-region-inline>
+            <div data-cms-widget="widgets/Button/Button" id="cms-widget-5db9c4e4-1725-4467-b7a6-5c5e959f7bbb" class="mt-md">
+            <div class="cs-button-wrap text-center ">
+    <a class="cs-btn cs-btn-lg cs-btn-primary"
+		href="https://forms.office.com/r/CSjDGnrh0t"
+       	target="_blank" >
+        <em class="fa fa-envelope"></em> <span>Contact Us</span>
+    </a>
+</div>
+    </div>
+
+        </div>
+    </div>
+    </div>
+
+            </div>
+        </div>
+        <!--End Footer Main-->
+    
+        <!--Begin Footer Bottom-->
+        <div class="footer-bottom">
+            <div class="container">
+                
+                
+            </div>
+        </div>
+        <!--End Footer Bottom-->
+
+							<div class="ada-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <a class="ada-footer__logo" href="https://www.schoolstatus.com/products/sites-and-apps" target="_blank" title="SchoolStatus Sites website link">
+                    <span class="sr-only">SchoolStatus Sites, a web platform for schools</span>
+                </a>
+                <ul class="ada-footer__links">
+                    <li><a href="/ada-policy" role="button">Website accessibility policy</a></li>
+                    <li><a href="/privacy-policy" role="button">Privacy policy</a></li>
+                    <li><a href="/site-map" role="button">Site map</a></li>
+                    <li><a href="/submit-ada-concern" role="button">Report accessibility issue</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+	
+	</footer>
+    <!--End Footer A-->
+    
+</div>
+<!--End Wrapper-->
+
+        </div>
+
+        <!-- BOTTOM SCRIPTS -->
+<script type="text/javascript" src="https://app.campussuite.com/themes/Windsor/scripts/windsor.js"></script>
+<script>
+    $(function() {
+        //Header Search Toggle
+        $('.header__search-toggle').attr('aria-hidden','true');
+        $('.header__search').hide();
+        $('.header__search-toggle').click(function() {
+            if ($('.header__search').is(":visible")) {
+                $('.header__search').slideToggle('slow').toggleClass('search-closed');
+            } else {
+                $('.header__search').slideToggle('slow').toggleClass('search-closed');
+            }
+        });
+        //ScrollTo
+        var $windowScroll = $(window),
+			$backToTop = $('.back-to-top-container');
+			$windowScroll.scroll(function() {
+				var fromTopPx = 200;
+				var scrolledFromtop = $windowScroll.scrollTop();
+			if (scrolledFromtop > fromTopPx) {
+				$backToTop.fadeIn();
+			} else {
+		    	$backToTop.fadeOut();
+			}
+		});
+    });
+    //SmoothScroll
+    /*! smooth-scroll v16.1.1 | (c) 2019 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/smooth-scroll */
+    !(function(e,t){"function"==typeof define&&define.amd?define([],(function(){return t(e)})):"object"==typeof exports?module.exports=t(e):e.SmoothScroll=t(e)})("undefined"!=typeof global?global:"undefined"!=typeof window?window:this,(function(w){"use strict";var L={ignore:"[data-scroll-ignore]",header:null,topOnEmptyHash:!0,speed:500,speedAsDuration:!1,durationMax:null,durationMin:null,clip:!0,offset:0,easing:"easeInOutCubic",customEasing:null,updateURL:!0,popstate:!0,emitEvents:!0},H=function(){var n={};return Array.prototype.forEach.call(arguments,(function(e){for(var t in e){if(!e.hasOwnProperty(t))return;n[t]=e[t]}})),n},r=function(e){"#"===e.charAt(0)&&(e=e.substr(1));for(var t,n=String(e),o=n.length,a=-1,r="",i=n.charCodeAt(0);++a<o;){if(0===(t=n.charCodeAt(a)))throw new InvalidCharacterError("Invalid character: the input contains U+0000.");1<=t&&t<=31||127==t||0===a&&48<=t&&t<=57||1===a&&48<=t&&t<=57&&45===i?r+="\\"+t.toString(16)+" ":r+=128<=t||45===t||95===t||48<=t&&t<=57||65<=t&&t<=90||97<=t&&t<=122?n.charAt(a):"\\"+n.charAt(a)}return"#"+r},q=function(){return Math.max(document.body.scrollHeight,document.documentElement.scrollHeight,document.body.offsetHeight,document.documentElement.offsetHeight,document.body.clientHeight,document.documentElement.clientHeight)},x=function(e){return e?(t=e,parseInt(w.getComputedStyle(t).height,10)+e.offsetTop):0;var t},Q=function(e,t,n,o){if(t.emitEvents&&"function"==typeof w.CustomEvent){var a=new CustomEvent(e,{bubbles:!0,detail:{anchor:n,toggle:o}});document.dispatchEvent(a)}};return function(o,e){var I,a,M,A,C={};C.cancelScroll=function(e){cancelAnimationFrame(A),A=null,e||Q("scrollCancel",I)},C.animateScroll=function(i,s,e){C.cancelScroll();var c=H(I||L,e||{}),u="[object Number]"===Object.prototype.toString.call(i),t=u||!i.tagName?null:i;if(u||t){var l=w.pageYOffset;c.header&&!M&&(M=document.querySelector(c.header));var n,o,a,d,r,f,m,h,p=x(M),g=u?i:(function(e,t,n,o){var a=0;if(e.offsetParent)for(;a+=e.offsetTop,e=e.offsetParent;);return a=Math.max(a-t-n,0),o&&(a=Math.min(a,q()-w.innerHeight)),a})(t,p,parseInt("function"==typeof c.offset?c.offset(i,s):c.offset,10),c.clip),y=g-l,v=q(),S=0,E=(n=y,a=(o=c).speedAsDuration?o.speed:Math.abs(n/1e3*o.speed),o.durationMax&&a>o.durationMax?o.durationMax:o.durationMin&&a<o.durationMin?o.durationMin:parseInt(a,10)),b=function(e,t){var n,o,a,r=w.pageYOffset;if(e==t||r==t||(l<t&&w.innerHeight+r)>=v)return C.cancelScroll(!0),o=t,a=u,0===(n=i)&&document.body.focus(),a||(n.focus(),document.activeElement!==n&&(n.setAttribute("tabindex","-1"),n.focus(),n.style.outline="none"),w.scrollTo(0,o)),Q("scrollStop",c,i,s),!(A=d=null)},O=function(e){var t,n,o;d||(d=e),S+=e-d,f=l+y*(n=r=1<(r=0===E?0:S/E)?1:r,"easeInQuad"===(t=c).easing&&(o=n*n),"easeOutQuad"===t.easing&&(o=n*(2-n)),"easeInOutQuad"===t.easing&&(o=n<.5?2*n*n:(4-2*n)*n-1),"easeInCubic"===t.easing&&(o=n*n*n),"easeOutCubic"===t.easing&&(o=--n*n*n+1),"easeInOutCubic"===t.easing&&(o=n<.5?4*n*n*n:(n-1)*(2*n-2)*(2*n-2)+1),"easeInQuart"===t.easing&&(o=n*n*n*n),"easeOutQuart"===t.easing&&(o=1- --n*n*n*n),"easeInOutQuart"===t.easing&&(o=n<.5?8*n*n*n*n:1-8*--n*n*n*n),"easeInQuint"===t.easing&&(o=n*n*n*n*n),"easeOutQuint"===t.easing&&(o=1+--n*n*n*n*n),"easeInOutQuint"===t.easing&&(o=n<.5?16*n*n*n*n*n:1+16*--n*n*n*n*n),t.customEasing&&(o=t.customEasing(n)),o||n),w.scrollTo(0,Math.floor(f)),b(f,g)||(A=w.requestAnimationFrame(O),d=e)};0===w.pageYOffset&&w.scrollTo(0,0),m=i,h=c,u||history.pushState&&h.updateURL&&history.pushState({smoothScroll:JSON.stringify(h),anchor:m.id},document.title,m===document.documentElement?"#top":"#"+m.id),"matchMedia"in w&&w.matchMedia("(prefers-reduced-motion)").matches?w.scrollTo(0,Math.floor(g)):(Q("scrollStart",c,i,s),C.cancelScroll(!0),w.requestAnimationFrame(O))}};var t=function(e){if(!e.defaultPrevented&&!(0!==e.button||e.metaKey||e.ctrlKey||e.shiftKey)&&"closest"in e.target&&(a=e.target.closest(o))&&"a"===a.tagName.toLowerCase()&&!e.target.closest(I.ignore)&&a.hostname===w.location.hostname&&a.pathname===w.location.pathname&&/#/.test(a.href)){var t,n;try{t=r(decodeURIComponent(a.hash))}catch(e){t=r(a.hash)}if(console.log(t),"#"===t){if(!I.topOnEmptyHash)return;n=document.documentElement}else n=document.querySelector(t);(n=n||"#top"!==t?n:document.documentElement)&&(e.preventDefault(),(function(e){if(history.replaceState&&e.updateURL&&!history.state){var t=w.location.hash;t=t||"",history.replaceState({smoothScroll:JSON.stringify(e),anchor:t||w.pageYOffset},document.title,t||w.location.href)}})(I),C.animateScroll(n,a))}},n=function(e){if(null!==history.state&&history.state.smoothScroll&&history.state.smoothScroll===JSON.stringify(I)){var t=history.state.anchor;"string"==typeof t&&t&&!(t=document.querySelector(r(history.state.anchor)))||C.animateScroll(t,null,{updateURL:!1})}};C.destroy=function(){I&&(document.removeEventListener("click",t,!1),w.removeEventListener("popstate",n,!1),C.cancelScroll(),A=M=a=I=null)};return (function(){if(!("querySelector"in document&&"addEventListener"in w&&"requestAnimationFrame"in w&&"closest"in w.Element.prototype))throw"Smooth Scroll: This browser does not support the required JavaScript methods and browser APIs.";C.destroy(),I=H(L,e||{}),M=I.header?document.querySelector(I.header):null,document.addEventListener("click",t,!1),I.updateURL&&I.popstate&&w.addEventListener("popstate",n,!1)})(),C}}));;
+    var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145577583-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+ 
+  gtag('config', 'UA-145577583-1');
+</script>
+
+        <!-- CUSTOM SCRIPTS -->
+
+
+
+    </body>
+
+</html>
+
+<!-- DEBUGGING -->
+<!--
+-->

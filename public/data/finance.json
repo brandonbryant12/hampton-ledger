@@ -1,0 +1,97 @@
+{
+  "tax": {
+    "year": 2025,
+    "source": "hampton-assessing",
+    "rates": [
+      {
+        "id": "town",
+        "label": "Town government",
+        "rate": 4.71,
+        "color": "#21556a",
+        "description": "Municipal services and town operations."
+      },
+      {
+        "id": "local-school",
+        "label": "Local education",
+        "rate": 6.13,
+        "color": "#72a68d",
+        "description": "The local education component. This table does not separately allocate Hampton and Winnacunnet."
+      },
+      {
+        "id": "state-school",
+        "label": "State education",
+        "rate": 1.16,
+        "color": "#d2bd80",
+        "description": "State education property tax component."
+      },
+      {
+        "id": "county",
+        "label": "Rockingham County",
+        "rate": 0.61,
+        "color": "#94aab8",
+        "description": "County government component."
+      }
+    ],
+    "districts": [
+      {
+        "id": "town",
+        "label": "Outside the precinct",
+        "rate": 0,
+        "total": 12.61
+      },
+      {
+        "id": "partial",
+        "label": "Partial precinct tax (3000)",
+        "rate": 0.06,
+        "total": 12.67
+      },
+      {
+        "id": "precinct",
+        "label": "Full precinct tax (2000)",
+        "rate": 0.62,
+        "total": 13.23
+      }
+    ],
+    "note": "Residential illustration using 2025 published rates. Verify your tax category on your bill. Credits, exemptions, abatements, utility categories, and future rate changes are not modeled."
+  },
+  "operating": {
+    "year": 2025,
+    "source": "hampton-annual-2025",
+    "status": "Unaudited annual-report summary",
+    "expensesIncludingEncumbrances": 34681093,
+    "encumbrances": 319892,
+    "otherRevenue": 11430113,
+    "townTaxEffort": 28670425,
+    "totalTaxEffort": 76574526,
+    "percentBudgetUsed": 94.09,
+    "limitations": "The reported operating expense total includes purchase orders (encumbrances) and excludes expenditures related to warrant articles. It is not cash paid, an all-funds spending total, or a reconciled transaction ledger.",
+    "warrantExpensesIncludingEncumbrances": 2993046
+  },
+  "history": [
+    {
+      "year": 2024,
+      "source": "hampton-annual-2024",
+      "status": "Unaudited annual-report summary",
+      "expensesIncludingEncumbrances": 33772808,
+      "encumbrances": 532815,
+      "otherRevenue": 11470717,
+      "townTaxEffort": 26902065,
+      "totalTaxEffort": 74701796,
+      "percentBudgetUsed": 95.36,
+      "limitations": "The reported operating expense total includes purchase orders (encumbrances) and excludes expenditures related to warrant articles. It is not cash paid, an all-funds spending total, or a reconciled transaction ledger."
+    },
+    {
+      "year": 2025,
+      "source": "hampton-annual-2025",
+      "status": "Unaudited annual-report summary",
+      "expensesIncludingEncumbrances": 34681093,
+      "encumbrances": 319892,
+      "otherRevenue": 11430113,
+      "townTaxEffort": 28670425,
+      "totalTaxEffort": 76574526,
+      "percentBudgetUsed": 94.09,
+      "limitations": "The reported operating expense total includes purchase orders (encumbrances) and excludes expenditures related to warrant articles. It is not cash paid, an all-funds spending total, or a reconciled transaction ledger.",
+      "warrantExpensesIncludingEncumbrances": 2993046
+    }
+  ]
+}

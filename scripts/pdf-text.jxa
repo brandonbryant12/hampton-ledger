@@ -1,0 +1,1 @@
+ObjC.import('Foundation');ObjC.import('PDFKit');function run(args){var d=$.PDFDocument.alloc.initWithURL($.NSURL.fileURLWithPath(args[0]));if(!d)throw Error('Cannot open PDF');var out=[];for(var i=0;i<d.pageCount;i++)out.push('PDF page '+(i+1)+'\n'+(ObjC.unwrap(d.pageAtIndex(i).string)||''));return out.join('\n\n');}

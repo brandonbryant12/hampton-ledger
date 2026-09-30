@@ -1,0 +1,2 @@
+ObjC.import('Foundation');ObjC.import('PDFKit');
+function run(args){var doc=$.PDFDocument.alloc.initWithURL($.NSURL.fileURLWithPath(args[0]));if(!doc)throw Error('Cannot open PDF');var out=$.PDFDocument.alloc.init;var pages=[];for(var i=Number(args[1])-1;i<Number(args[2]);i++){var page=doc.pageAtIndex(i);pages.push({page:i+1,text:ObjC.unwrap(page.string)||''});out.insertPageAtIndex(page,out.pageCount);}if(!out.writeToFile(args[3]))throw Error('Cannot write excerpt');return JSON.stringify(pages);}
