@@ -1,0 +1,13 @@
+{
+  "name": "hampton-ledger",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "test": "node --test --test-concurrency=2",
+    "ingest": "node scripts/ingest.mjs",
+    "validate": "node scripts/validate.mjs",
+    "deploy": "wrangler deploy"
+  }
+}
