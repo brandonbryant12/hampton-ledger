@@ -4,6 +4,12 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
+    inputs:
+      base_url:
+        description: Optional live site URL for post-deployment browser verification
+        required: false
+        type: string
+        default: ""
 permissions:
   contents: read
 jobs:
@@ -21,6 +27,8 @@ jobs:
         run: npm install --no-save --package-lock=false @playwright/test@1.63.0
       - run: npx playwright install --with-deps chromium
       - run: npx playwright test
+        env:
+          TEST_BASE_URL: ${{ inputs.base_url }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
